@@ -2,6 +2,69 @@ class RALColor {
   static late RALColor _instance;
   factory RALColor() => _instance ??= new RALColor._();
   RALColor._();
+
+  static RAL ral1000 = RAL.fromJson({
+    "code": "1001",
+    "scope": "classic",
+    "color": {
+      "hex": "#D0B084",
+      "websafe": "#cc9999",
+      "rgb": {"r": 208, "g": 176, "b": 132},
+      "hsl": {"h": 35, "s": 45, "l": 67},
+      "hsb": {"h": 35, "s": 37, "b": 82},
+      "cmyk": {"c": "5", "m": "20", "y": "40", "k": "10"}
+    },
+    "names": {
+      "de": "Beige",
+      "en": "Beige",
+      "fr": "Beige",
+      "es": "Beige",
+      "it": "Beige",
+      "nl": "Beige"
+    }
+  });
+
+  static RAL ral1001 = RAL.fromJson({
+    "code": "1001",
+    "scope": "classic",
+    "color": {
+      "hex": "#D0B084",
+      "websafe": "#cc9999",
+      "rgb": {"r": 208, "g": 176, "b": 132},
+      "hsl": {"h": 35, "s": 45, "l": 67},
+      "hsb": {"h": 35, "s": 37, "b": 82},
+      "cmyk": {"c": "5", "m": "20", "y": "40", "k": "10"}
+    },
+    "names": {
+      "de": "Beige",
+      "en": "Beige",
+      "fr": "Beige",
+      "es": "Beige",
+      "it": "Beige",
+      "nl": "Beige"
+    }
+  });
+
+  static RAL ral1002 = RAL.fromJson({
+    "code": "1002",
+    "scope": "classic",
+    "color": {
+      "hex": "#D2AA6D",
+      "websafe": "#cc9966",
+      "rgb": {"r": 210, "g": 170, "b": 109},
+      "hsl": {"h": 36, "s": 53, "l": 63},
+      "hsb": {"h": 36, "s": 48, "b": 82},
+      "cmyk": {"c": "5", "m": "20", "y": "50", "k": "10"}
+    },
+    "names": {
+      "de": "Sandgelb",
+      "en": "Sand yellow",
+      "fr": "Jaune sable",
+      "es": "Amarillo arena",
+      "it": "Giallo sabbia",
+      "nl": "Zandgeel"
+    }
+  });
 }
 
 class RAL {
@@ -15,19 +78,19 @@ class RAL {
   RAL.fromJson(Map<String, dynamic> json) {
     code = json['code'];
     scope = json['scope'];
-    color = json['color'] != null ? new Color.fromJson(json['color']) : null;
-    names = json['names'] != null ? new Names.fromJson(json['names']) : null;
+    color = json['color'] != null ? Color.fromJson(json['color']) : null;
+    names = json['names'] != null ? Names.fromJson(json['names']) : null;
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['code'] = this.code;
     data['scope'] = this.scope;
-    if (this.color != null) {
-      data['color'] = this.color!.toJson();
+    if (color != null) {
+      data['color'] = color!.toJson();
     }
-    if (this.names != null) {
-      data['names'] = this.names!.toJson();
+    if (names != null) {
+      data['names'] = names!.toJson();
     }
     return data;
   }
