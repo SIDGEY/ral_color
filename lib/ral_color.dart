@@ -1,3 +1,9 @@
+class RALColor {
+  static late RALColor _instance;
+  factory RALColor() => _instance ??= new RALColor._();
+  RALColor._();
+}
+
 class RAL {
   String? code;
   String? scope;
