@@ -1,202 +1,189 @@
-library _color;
-
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
-
 class RAL {
-  late String name;
-  late int number;
-  late int pantone;
-  late String hex;
+  String? code;
+  String? scope;
+  Color? color;
+  Names? names;
 
-  RAL(this.number, this.name, this.pantone, this.hex);
+  RAL({this.code, this.scope, this.color, this.names});
+
+  RAL.fromJson(Map<String, dynamic> json) {
+    code = json['code'];
+    scope = json['scope'];
+    color = json['color'] != null ? new Color.fromJson(json['color']) : null;
+    names = json['names'] != null ? new Names.fromJson(json['names']) : null;
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['code'] = this.code;
+    data['scope'] = this.scope;
+    if (this.color != null) {
+      data['color'] = this.color!.toJson();
+    }
+    if (this.names != null) {
+      data['names'] = this.names!.toJson();
+    }
+    return data;
+  }
 }
 
-/*
-{number:1000, nam:Beige vert,	4525,	#ccc188}
- 1001 Beige	728	0 18 43 11	ceb487
- 1002 Jaune Sable	465	18 31 56 0	d0b173
- 1003 Jaune signalisation	137	0 34 91 0	f2ad00
- 1004 Jaune d’Or	124	0 27 100 6	e4a700
- 1005 Jaune miel	131	0 27 100 9	c79600
- 1006 Jaune maïs	144	0 47 100 0	d99300
- 1007 Jaune de chrome	144	0 47 100 0	e69400
- 1011 Beige brun	723	0 38 94 18	af8552
- 1012 Jaune citron	612	0 0 100 18	d8ba2e
- 1013 Perl white, Blanc perl	468	6 9 24 0	e5dfcc
- 1014 Ivory, Ivoire	467	9 15 34 0	dfcea1
- 1015 Ivoire clair	726	0 6 18 6	e6d9bd
- 1016 Jaune soufre	604	0 0 87 0	ecea41
- 1017 Jaune safran	150	0 31 69 0	f6b256
- 1018 Jaune de zinc	123	0 31 94 0	fdda38
- 1019 Gris beige	479	31 43 47 0	a6937b
- 1020 Jaune olive	4505	0 15 76 38	a09465
- 1021 Jaune Cadmium	1235	0 27 76 0	f2c000
- 1023 Jaune trafic	1235	0 27 76 0	f2bf00
- 1024 Jaune ocre	722	0 34 83 15	b89650
- 1027 Jaune curry	1255	0 27 100 34	a4861a
- 1028 Jaune melon	137	0 34 91 0	ffa600
- 1032 Jaune genêt	124	0 27 100 6	e2ac00
- 1033 Jaune dahlia	1375	0 38 76 0	f7a11f
- 1034 Jaune pastel	715	0 27 60 0	eba557
- 1037 Jaune soleil	715	0 27 60 0	eba557
- 2000 Jaune orange	152	0 51 100 0	d97604
- 2001 Orange rouge	173	0 69 100 6	bb4926
- 2002 Orange sang	485	0 100 91 0	c13524
- 2003	164	0 47 76 0	f97a31
- 2004	1655	0 65 87 0	e8540d
- 2008	1585	0 70 90 0	f46f29
- 2009	172	0 82 100 0	db5316
- 2010	1665	0 78 100 0	d55d23
- 2011	1585	0 66 96 0	ea7625
- 2012	178	0 75 73 0	d6654e
- 3000	484	19 99 100 9	a02725
- 3001	484	18 100 100 9	a0001c
- 3002	187	20 100 100 12	991424
- 3003	704	24 100 97 21	870a24
- 3004	491	30 99 80 37	6c1b2a
- 3005	490	36 94 73 50	581e29
- 3007	4975	46 82 67 65	402226
- 3009	181	31 88 84 37	6d312b
- 3011	1815	28 99 96 29	791f24
- 3012	729	13 54 54 1	c68873
- 3013	484	21 98 100 12	992a28
- 3014	709	4 69 41 0	cf7278
- 3015	197	0 47 11 0	e3a0ac
- 3016	180	16 93 98 5	ab392d
- 3017	1787	2 84 55 1	cc515e
- 3018	710	2 91 64 0	ca3f51
- 3020	485	6 100 100 1	bf111b
- 3022	178	1 72 68 1	d36b56
- 3027	186	13 100 74 2	b01d42
- 3031	1805	17 95 79 6	a7323e
- 4001	682	46 73 23 2	865d86
- 4002	201	28 88 57 14	8f3f51
- 4003	205	4 80 10 0	ca5b91
- 4004	505	32 99 71 38	69193b
- 4005	667	53 70 4 1	7e63a1
- 4006	465	50 93 16 1	912d76
- 4007	5185	57 91 47 48	48233e
- 4008	689	45 91 18 2	853d7d
- 4009	Gris froid	0 0 0 65	9d8493
- 5000	533	98 75 31 16	2f4a71
- 5001	302	100 71 38 25	0e4666
- 5002	288	100 92 21 11	162e7b
- 5003	540	100 47 0 47	193058
- 5004	 Noir 6	86 77 55 71	1a1d2a
- 5005	294	100 80 20 7	004389
- 5007	5405	94 61 23 5	38618c
- 5008	433	86 67 53 49	2d3944
- 5009	3025	100 61 34 14	245878
- 5010	541	100 80 25 11	00427f
- 5011	289	98 83 46 53	1a2740
- 5012	307	96 36 6 0	2781bb
- 5013	5255	100 88 38 35	202e53
- 5014	646	69 46 24 2	667b9a
- 5015	3015	100 49 4 1	0071b5
- 5017	2945	100 76 18 4	004c91
- 5018	3145	100 23 43 2	138992
- 5019	301	100 43 0 18	005688
- 5020	3155	100 34 48 10	00747d
- 5021	3155	100 34 48 10	00747d
- 5022	276	87 87 0 51	28275a
- 5023	5405	86 60 21 3	486591
- 5024	5483	73 30 20 1	6391b0
- 6000	568	97 30 70 15	327663
- 6001	349	100 30 100 21	266d3b
- 6002	349	100 0 83 47	276230
- 6003	448	87 72 100 0	4e553d
- 6004	316	90 53 56 42	004547
- 6005	3308	100 45 76 52	0e4438
- 6006	Black	0 11 51 100	3b3d33
- 6007	5605	76 53 81 65	2b3626
- 6008	 Noir 4	65 59 78 69	302f22
- 6009	5467	85 51 77 66	213529
- 6010	349	100 0 83 47	426e38
- 6011	625	67 31 73 12	68825f
- 6012	5467	84 56 66 57	293a37
- 6013	417	53 40 69 16	76785b
- 6014	 Noir	59 58 75 54	443f31
- 6015	426	69 58 68 57	383b34
- 6016	342	100 0 69 43	00664f
- 6017	364	87 23 100 9	4d8542
- 6018	363	90 10 100 1	4b9b3e
- 6019	557	37 0 37	b2d8b4
- 6020	5535	76 48 78 49	394937
- 6021	624	55 22 58 2	87a180
- 6022	Black, Noir 2	0 0 31 100	3c372a
- 6024	348	100 19 89 7	008455
- 6025	371	75 33 99 21	56723d
- 6026	2735	100 94 0 0	005c54
- 6027	631	66 2 29 0	77bbbd
- 6028	3305	92 43 69 37	2e554b
- 6029	349	100 28 97 20	006f43
- 6032	3288	100 0 56 18	00855a
- 6033	569	92 25 52 5	3f8884
- 6034	624	66 12 31 0	75adb1
- 7000	424	58 38 36 4	798790
- 7001	444	49 34 31 1	8c969f
- 7002	Gris chaud	0 15 27 56	827d67
- 7003	417	52 43 56 13	79796c
- 7004	423	42 34 31 1	999a9f
- 7005	431	59 46 49 14	6d7270
- 7006	 Gris chaud 11	48 51 60 20	766a5d
- 7008	463	60 65 100 0	756444
- 7009	405	65 49 61 29	585e55
- 7010	5477	65 54 56 30	565957
- 7011	5477	70 55 50 26	525a60
- 7012	445	68 53 50 24	575e62
- 7013	449	57 54 68 37	585346
- 7015	446	71 60 51 32	4c5057
- 7016	433	78 64 56 49	363d43
- 7021	419	75 65 59 60	2e3236
- 7022	465	14 29 65 0	464644
- 7023	424	52 49 49 8	7f8279
- 7024	432	71 61 52 36	484b52
- 7026	 Noir 7	80 61 57 47	354044
- 7030	416	0 0 15 51	919089
- 7031	445	69 50 46 17	5b686f
- 7032	 Gris chaud 5	30 22 33 0	b5b5a7
- 7033	5625	55 37 53 9	7a8376
- 7034	 Gris chaud 8	42 37 56 6	928d75
- 7035	421	23 14 17 0	c4caca
- 7036	 Gris froid 8	44 37 36 2	949294
- 7037	424	53 43 42 7	7e8082
- 7038 Gris agathe	429	32 23 27 0	b0b3af
- 7039 Gris Quartz	431	56 49 55 19	6d6b64
- 7040 Gris fenêtre	423	43 31 28 1	9aa0a7
- 7042 Gris trafic A	430	46 33 35 1	929899
- 7043 Gris trafic B	446	68 56 55 32	505455
- 8000	464	47 65 100 0	8b7045
- 8001 Ocre brun	471	0 56 100 18	9c6935
- 8002 Brun signalisation	478	34 71 78 29	774c3b
- 8003 Brun argile	4635	32 69 90 25	815333
- 8004 Brun cuivre	4635	26 78 83 17	904e3b
- 8007 Brun chevreuil	478	36 72 91 37	6b442a
- 8008 Brun olivâtre	463	37 64 91 31	735230
- 8011 Brun noyer	477	39 74 86 47	5b3927
- 8012 Brun rouge	175	34 85 82 42	64312a
- 8014 Brun sépia	4695	49 57 77 57	49372a
- 8015 Brun châtaigne	175	37 83 77 49	5a2e2a
- 8016 Brun acajou	4695	42 75 77 55	4f3128
- 8017 Brun chocolat	497	48 72 71 60	45302b
- 8019 Brun gris	412	62 67 64 60	3b3332
- 8022 Brun noir	 Noir 6	69 69 66 81	1e1a1a
- 8023 Brun orangé	471	0 56 100 18	a45c32
- 8024 Brun beige	4705	0 60 72 47	7b5741
- 8025 Brun pâle	705	42 59 67 25	765d4d
- 8028 brun terre	4695	0 79 100 72	4f3b2b
- 9001 blanc crème	gris chaud 1	5 6 13 0	eee9da
- 9002  blanc gris	420	13 9 13 0	dadbd5
- 9003 Blanc signalisation	705	2 1 1 0	f8f9fb
- 9004 Noir signalisation	Noir 6	73 69 62 73	252427
- 9005 noir profond	Noir Quadri	75 68 65 82	151619
- 9010 Blanc pur	Gris froid 1	3 2 6 0	f4f4ed
- 9011 Noir graphite	Noir 6	78 70 60 75	1f2126
- 9016 Blanc traffic	705	4 1 2 0	f3f6f6
- 9017 Noir trafic	Noir Quadri	74 70 63 80	1b191d
- 9018 Blanc Papyrus	428	20 10 15 0	cbd2d0
- */
+class Color {
+  String? hex;
+  String? websafe;
+  Rgb? rgb;
+  Hsl? hsl;
+  Hsb? hsb;
+  Cmyk? cmyk;
+
+  Color({this.hex, this.websafe, this.rgb, this.hsl, this.hsb, this.cmyk});
+
+  Color.fromJson(Map<String, dynamic> json) {
+    hex = json['hex'];
+    websafe = json['websafe'];
+    rgb = json['rgb'] != null ? new Rgb.fromJson(json['rgb']) : null;
+    hsl = json['hsl'] != null ? new Hsl.fromJson(json['hsl']) : null;
+    hsb = json['hsb'] != null ? new Hsb.fromJson(json['hsb']) : null;
+    cmyk = json['cmyk'] != null ? new Cmyk.fromJson(json['cmyk']) : null;
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['hex'] = this.hex;
+    data['websafe'] = this.websafe;
+    if (this.rgb != null) {
+      data['rgb'] = this.rgb!.toJson();
+    }
+    if (this.hsl != null) {
+      data['hsl'] = this.hsl!.toJson();
+    }
+    if (this.hsb != null) {
+      data['hsb'] = this.hsb!.toJson();
+    }
+    if (this.cmyk != null) {
+      data['cmyk'] = this.cmyk!.toJson();
+    }
+    return data;
+  }
+}
+
+class Rgb {
+  int? r;
+  int? g;
+  int? b;
+
+  Rgb({this.r, this.g, this.b});
+
+  Rgb.fromJson(Map<String, dynamic> json) {
+    r = json['r'];
+    g = json['g'];
+    b = json['b'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['r'] = this.r;
+    data['g'] = this.g;
+    data['b'] = this.b;
+    return data;
+  }
+}
+
+class Hsl {
+  int? h;
+  int? s;
+  int? l;
+
+  Hsl({this.h, this.s, this.l});
+
+  Hsl.fromJson(Map<String, dynamic> json) {
+    h = json['h'];
+    s = json['s'];
+    l = json['l'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['h'] = this.h;
+    data['s'] = this.s;
+    data['l'] = this.l;
+    return data;
+  }
+}
+
+class Hsb {
+  int? h;
+  int? s;
+  int? b;
+
+  Hsb({this.h, this.s, this.b});
+
+  Hsb.fromJson(Map<String, dynamic> json) {
+    h = json['h'];
+    s = json['s'];
+    b = json['b'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['h'] = this.h;
+    data['s'] = this.s;
+    data['b'] = this.b;
+    return data;
+  }
+}
+
+class Cmyk {
+  String? c;
+  String? m;
+  String? y;
+  String? k;
+
+  Cmyk({this.c, this.m, this.y, this.k});
+
+  Cmyk.fromJson(Map<String, dynamic> json) {
+    c = json['c'];
+    m = json['m'];
+    y = json['y'];
+    k = json['k'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['c'] = this.c;
+    data['m'] = this.m;
+    data['y'] = this.y;
+    data['k'] = this.k;
+    return data;
+  }
+}
+
+class Names {
+  String? de;
+  String? en;
+  String? fr;
+  String? es;
+  String? it;
+  String? nl;
+
+  Names({this.de, this.en, this.fr, this.es, this.it, this.nl});
+
+  Names.fromJson(Map<String, dynamic> json) {
+    de = json['de'];
+    en = json['en'];
+    fr = json['fr'];
+    es = json['es'];
+    it = json['it'];
+    nl = json['nl'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['de'] = this.de;
+    data['en'] = this.en;
+    data['fr'] = this.fr;
+    data['es'] = this.es;
+    data['it'] = this.it;
+    data['nl'] = this.nl;
+    return data;
+  }
+}
