@@ -6,17 +6,17 @@ class Calculator {
   int addOne(int value) => value + 1;
 }
 
-class Color {
-  late String Name;
-  late int Number;
+class RAL {
+  late String name;
+  late int number;
   late int pantone;
   late String hex;
 
-  Color(this.Number, this.Name, this.pantone, this.hex);
+  RAL(this.number, this.name, this.pantone, this.hex);
 }
 
 /*
-1000 Beige vert	4525	0 6 38 18	ccc188
+{number:1000, nam:Beige vert,	4525,	#ccc188}
  1001 Beige	728	0 18 43 11	ceb487
  1002 Jaune Sable	465	18 31 56 0	d0b173
  1003 Jaune signalisation	137	0 34 91 0	f2ad00
