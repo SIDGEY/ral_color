@@ -6,6 +6,7 @@ class ColorView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ral8022 = RALColor(numberRalColor: 1000);
     return Column(
       children: [
         Wrap(

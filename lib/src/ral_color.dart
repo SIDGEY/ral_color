@@ -1,7 +1,13 @@
-
+import 'package:ral_color/src/controller/parse_json_file.dart';
 import 'package:ral_color/src/model/ral_models.dart';
 
 class RALColor {
+  RALColor({required this.numberRalColor}) {
+    ParseJsonFile().parseJson(numberRalColor);
+  }
+
+  final int numberRalColor;
+
   static RAL ral1000 = RAL.fromJson({
     "code": "1001",
     "scope": "classic",
@@ -13,6 +19,14 @@ class RALColor {
       "hsb": {"h": 35, "s": 37, "b": 82},
       "cmyk": {"c": "5", "m": "20", "y": "40", "k": "10"}
     },
+    "names": {
+      "de": "Beige",
+      "en": "Beige",
+      "fr": "Beige",
+      "es": "Beige",
+      "it": "Beige",
+      "nl": "Beige"
+    }
   });
 
   static RAL ral1001 = RAL.fromJson({
@@ -26,6 +40,14 @@ class RALColor {
       "hsb": {"h": 35, "s": 37, "b": 82},
       "cmyk": {"c": "5", "m": "20", "y": "40", "k": "10"}
     },
+    "names": {
+      "de": "Beige",
+      "en": "Beige",
+      "fr": "Beige",
+      "es": "Beige",
+      "it": "Beige",
+      "nl": "Beige"
+    }
   });
 
   static RAL ral1002 = RAL.fromJson({
@@ -39,6 +61,14 @@ class RALColor {
       "hsb": {"h": 36, "s": 48, "b": 82},
       "cmyk": {"c": "5", "m": "20", "y": "50", "k": "10"}
     },
+    "names": {
+      "de": "Sandgelb",
+      "en": "Sand yellow",
+      "fr": "Jaune sable",
+      "es": "Amarillo arena",
+      "it": "Giallo sabbia",
+      "nl": "Zandgeel"
+    }
   });
 
   static RAL ral1003 = RAL.fromJson({
@@ -52,6 +82,14 @@ class RALColor {
       "hsb": {"h": 40, "s": 100, "b": 98},
       "cmyk": {"c": "0", "m": "35", "y": "100", "k": "0"}
     },
+    "names": {
+      "de": "Signalgelb",
+      "en": "Signal yellow",
+      "fr": "Jaune de sécurité",
+      "es": "Amarillo señales",
+      "it": "Giallo segnale",
+      "nl": "Signaalgeel"
+    }
   });
 
   static RAL ral1004 = RAL.fromJson({
@@ -65,6 +103,14 @@ class RALColor {
       "hsb": {"h": 42, "s": 100, "b": 89},
       "cmyk": {"c": "10", "m": "35", "y": "100", "k": "0"}
     },
+    "names": {
+      "de": "Goldgelb",
+      "en": "Golden yellow",
+      "fr": "Jaune or",
+      "es": "Amarillo oro",
+      "it": "Giallo oro",
+      "nl": "Goudgeel"
+    }
   });
 
   static RAL ral1005 = RAL.fromJson({
@@ -78,6 +124,14 @@ class RALColor {
       "hsb": {"h": 42, "s": 100, "b": 80},
       "cmyk": {"c": "0", "m": "30", "y": "100", "k": "0"}
     },
+    "names": {
+      "de": "Honiggelb",
+      "en": "Honey yellow",
+      "fr": "Jaune miel",
+      "es": "Amarillo miel",
+      "it": "Giallo miele",
+      "nl": "Honinggeel"
+    }
   });
 
   static RAL ral1006 = RAL.fromJson({
@@ -91,6 +145,14 @@ class RALColor {
       "hsb": {"h": 38, "s": 100, "b": 89},
       "cmyk": {"c": "0", "m": "40", "y": "100", "k": "0"}
     },
+    "names": {
+      "de": "Maisgelb",
+      "en": "Maize yellow",
+      "fr": "Jaune maïs",
+      "es": "Amarillo maiz",
+      "it": "Giallo polenta",
+      "nl": "Maisgeel"
+    }
   });
 
   static RAL ral1007 = RAL.fromJson({
@@ -104,5 +166,13 @@ class RALColor {
       "hsb": {"h": 36, "s": 100, "b": 91},
       "cmyk": {"c": "0", "m": "50", "y": "100", "k": "0"}
     },
+    "names": {
+      "de": "Narzissengelb",
+      "en": "Daffodil yellow",
+      "fr": "Jaune narcisse",
+      "es": "Amarillo narciso",
+      "it": "Giallo narciso",
+      "nl": "Narcissengeel"
+    }
   });
 }
