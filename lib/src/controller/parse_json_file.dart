@@ -17,4 +17,20 @@ class ParseJsonFile {
     debugPrint("Color => ${ral.color.hex}");
     return ral;
   }
+
+  Future<Map<int, RAL>> parseMap() async {
+    String jsonString = await _loadFromAsset();
+    final Map<String, dynamic> jsonRes =
+        json.decode(jsonString) as Map<String, dynamic>;
+    Map<int, RAL> map = <int, RAL>{};
+
+    for (String numRal in jsonRes.keys) {
+      int num = int.parse(numRal);
+      map.putIfAbsent(num, () => RAL.fromJson(jsonRes[numRal]));
+    }
+
+    //final RAL ral = RAL.fromJson(jsonRes[numColor.toString()]);
+    // debugPrint("Color => ${ral.color.hex}");
+    return map;
+  }
 }
