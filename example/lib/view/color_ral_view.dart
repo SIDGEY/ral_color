@@ -12,16 +12,9 @@ class ColorView extends StatelessWidget {
           spacing: 25.0,
           runSpacing: 25.0,
           children: [
-            ...[
-              RALColor(numberRalColor: 1001),
-              RALColor(numberRalColor: 1005),
-              RALColor(numberRalColor: 3032),
-              RALColor(numberRalColor: 9001),
-              RALColor(numberRalColor: 9005),
-              RALColor(numberRalColor: 9016),
-            ].map(
+            ...[RALColor.getMap().keys.toList()].map(
               (ral) => _ContainerColor(
-                color: ral.toColor(),
+                color: RALColor(numberRalColor: ral as int).toColor(),
               ),
             ),
           ],
