@@ -1,8 +1,9 @@
 name: ral_color
 description: Convert RAL to Color
 version: 0.0.1
-homepage:
-
+homepage: https://sidgey.fr/ral_color
+#repository:
+#publish_to: none
 environment:
   sdk: ">=2.16.1 <3.0.0"
   flutter: ">=1.17.0"
