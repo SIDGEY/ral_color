@@ -14,8 +14,8 @@ class ColorView extends StatelessWidget {
           children: [
             ...[
               RALColor(numberRalColor: 1001),
-              RALColor(numberRalColor: 3003),
-              RALColor(numberRalColor: 3002),
+              RALColor(numberRalColor: 1005),
+              RALColor(numberRalColor: 3032),
               RALColor(numberRalColor: 9001),
               RALColor(numberRalColor: 9005),
               RALColor(numberRalColor: 9016),

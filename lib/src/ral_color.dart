@@ -23,7 +23,7 @@ class RALColor {
   late RAL _ral;
   RALColor({required this.numberRalColor}) {
     // TODO gestion erreur
-    _ral = _ctrl.map![numberRalColor]!;
+    _ral = _ctrl.map[numberRalColor] as RAL;
   }
 
   late final int numberRalColor;
@@ -36,10 +36,7 @@ class RALColor {
   }
 
   Color toColor() {
-    if (_ral != null) {
-      return _ral!.toColor();
-    }
-    return Colors.transparent;
+    return _ral.toColor();
   }
 
   static RAL ral1000 = RAL.fromJson({
