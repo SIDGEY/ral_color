@@ -18,6 +18,10 @@ class RALLibController {
 }
 
 class RALColor {
+  static Map<int, RAL> getMap() {
+    return _ctrl.map;
+  }
+
   late RAL _ral;
   RALColor({required this.numberRalColor}) {
     _ral = _ctrl.map[numberRalColor] as RAL;
