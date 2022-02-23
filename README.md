@@ -15,13 +15,7 @@ This package will allow you to convert RAL colors to MaterialColors, RGB, Hexade
 
 ## Getting started
 
-
-To call Ral color :
-        RALColor.ral1000
-
-To call MaterialColor from RAL :
-    RALColor.ral1000.toColor();
-
+import 'package:ral_color/ral_color_theme.dart';
 
 ## Usage
 
@@ -29,10 +23,10 @@ To call MaterialColor from RAL :
 to `/example` folder. 
 
 ```dart
-Color ralChoose = RALColor.ral1000.toColor();
+   RALColor ralColor =  RALColor(numberRalColor: 1001); 
+   
+    
 ```
 
 ## Additional information
 
-Actualy, just ral color between 1001 and 1007.
-Please us time time to add new color.
