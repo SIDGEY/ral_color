@@ -23,12 +23,7 @@ class ColorView extends StatelessWidget {
               RALColor.ral1007,
             ].map(
               (ral) => _ContainerColor(
-                color: Color.fromRGBO(
-                  ral.color!.rgb!.r!,
-                  ral.color!.rgb!.g!,
-                  ral.color!.rgb!.b!,
-                  1.0,
-                ),
+                color: ral.toColor(),
               ),
             ),
           ],
