@@ -11,29 +11,28 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+This package will allow you to convert RAL colors to MaterialColors, RGB, Hexadecimal, CMJN ...
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+
+To call Ral color :
+        RALColor.ral1000
+
+To call MaterialColor from RAL :
+    RALColor.ral1000.toColor();
+
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
+
 to `/example` folder. 
 
 ```dart
-const like = 'sample';
+Color ralChoose = RALColor.ral1000.toColor();
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+Actualy, just ral color between 1001 and 1007.
+Please us time time to add new color.
