@@ -5,10 +5,25 @@ import 'package:ral_color/src/model/ral_models.dart';
 
 import 'controller/parse_json_file.dart';
 
+RALLibController _ctrl = RALLibController();
+
+class RALLibController {
+  Map<int, RAL> map = <int, RAL>{};
+
+  RALLibController() {
+    loadFile();
+  }
+
+  void loadFile() async {
+    map = await ParseJsonFile().parseMap();
+  }
+}
+
 class RALColor {
-  RAL? _ral;
+  late RAL _ral;
   RALColor({required this.numberRalColor}) {
-    ParseJsonFile().parseJson(numberRalColor);
+    // TODO gestion erreur
+    _ral = _ctrl.map![numberRalColor]!;
   }
 
   late final int numberRalColor;

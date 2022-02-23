@@ -6,9 +6,6 @@ class ColorView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ral8022 = RALColor(numberRalColor: 9016);
-
-    print(ral8022);
     return Column(
       children: [
         Wrap(
@@ -16,14 +13,12 @@ class ColorView extends StatelessWidget {
           runSpacing: 25.0,
           children: [
             ...[
-              RALColor.ral1000,
-              RALColor.ral1001,
-              RALColor.ral1002,
-              RALColor.ral1003,
-              RALColor.ral1004,
-              RALColor.ral1005,
-              RALColor.ral1006,
-              RALColor.ral1007,
+              RALColor(numberRalColor: 1001),
+              RALColor(numberRalColor: 3003),
+              RALColor(numberRalColor: 3002),
+              RALColor(numberRalColor: 9001),
+              RALColor(numberRalColor: 9005),
+              RALColor(numberRalColor: 9016),
             ].map(
               (ral) => _ContainerColor(
                 color: ral.toColor(),

@@ -28,9 +28,6 @@ class ParseJsonFile {
       int num = int.parse(numRal);
       map.putIfAbsent(num, () => RAL.fromJson(jsonRes[numRal]));
     }
-
-    //final RAL ral = RAL.fromJson(jsonRes[numColor.toString()]);
-    // debugPrint("Color => ${ral.color.hex}");
     return map;
   }
 }
