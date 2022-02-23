@@ -17,7 +17,7 @@ class RAL {
     code = json['code'];
     scope = json['scope'];
     color = ColorRAL.fromJson(json['color']);
-    namesRal = json['names'];
+    namesRal = NamesRal.fromJson(json['names']);
   }
 
   widget.Color toColor() {
