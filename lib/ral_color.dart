@@ -1,3 +1,5 @@
+import 'package:flutter/widgets.dart' as widget;
+
 class RALColor {
   static late RALColor _instance;
   factory RALColor() => _instance ??= new RALColor._();
@@ -65,6 +67,111 @@ class RALColor {
       "nl": "Zandgeel"
     }
   });
+
+  static RAL ral1003 = RAL.fromJson({
+    "code": "1003",
+    "scope": "classic",
+    "color": {
+      "hex": "#F9A800",
+      "websafe": "#ff9900",
+      "rgb": {"r": 249, "g": 168, "b": 0},
+      "hsl": {"h": 40, "s": 100, "l": 49},
+      "hsb": {"h": 40, "s": 100, "b": 98},
+      "cmyk": {"c": "0", "m": "35", "y": "100", "k": "0"}
+    },
+    "names": {
+      "de": "Signalgelb",
+      "en": "Signal yellow",
+      "fr": "Jaune de sécurité",
+      "es": "Amarillo señales",
+      "it": "Giallo segnale",
+      "nl": "Signaalgeel"
+    }
+  });
+
+  static RAL ral1004 = RAL.fromJson({
+    "code": "1004",
+    "scope": "classic",
+    "color": {
+      "hex": "#E49E00",
+      "websafe": "#cc9900",
+      "rgb": {"r": 228, "g": 158, "b": 0},
+      "hsl": {"h": 42, "s": 100, "l": 45},
+      "hsb": {"h": 42, "s": 100, "b": 89},
+      "cmyk": {"c": "10", "m": "35", "y": "100", "k": "0"}
+    },
+    "names": {
+      "de": "Goldgelb",
+      "en": "Golden yellow",
+      "fr": "Jaune or",
+      "es": "Amarillo oro",
+      "it": "Giallo oro",
+      "nl": "Goudgeel"
+    }
+  });
+
+  static RAL ral1005 = RAL.fromJson({
+    "code": "1005",
+    "scope": "classic",
+    "color": {
+      "hex": "#CB8E00",
+      "websafe": "#cc9900",
+      "rgb": {"r": 203, "g": 142, "b": 0},
+      "hsl": {"h": 42, "s": 100, "l": 40},
+      "hsb": {"h": 42, "s": 100, "b": 80},
+      "cmyk": {"c": "0", "m": "30", "y": "100", "k": "0"}
+    },
+    "names": {
+      "de": "Honiggelb",
+      "en": "Honey yellow",
+      "fr": "Jaune miel",
+      "es": "Amarillo miel",
+      "it": "Giallo miele",
+      "nl": "Honinggeel"
+    }
+  });
+
+  static RAL ral1006 = RAL.fromJson({
+    "code": "1006",
+    "scope": "classic",
+    "color": {
+      "hex": "#E29000",
+      "websafe": "#cc9900",
+      "rgb": {"r": 226, "g": 144, "b": 0},
+      "hsl": {"h": 38, "s": 100, "l": 44},
+      "hsb": {"h": 38, "s": 100, "b": 89},
+      "cmyk": {"c": "0", "m": "40", "y": "100", "k": "0"}
+    },
+    "names": {
+      "de": "Maisgelb",
+      "en": "Maize yellow",
+      "fr": "Jaune maïs",
+      "es": "Amarillo maiz",
+      "it": "Giallo polenta",
+      "nl": "Maisgeel"
+    }
+  });
+
+  static RAL ral1007 = RAL.fromJson({
+    "code": "1007",
+    "scope": "classic",
+    "color": {
+      "hex": "#E88C00",
+      "websafe": "#ff9900",
+      "rgb": {"r": 232, "g": 140, "b": 0},
+      "hsl": {"h": 36, "s": 100, "l": 45},
+      "hsb": {"h": 36, "s": 100, "b": 91},
+      "cmyk": {"c": "0", "m": "50", "y": "100", "k": "0"}
+    },
+    "names": {
+      "de": "Narzissengelb",
+      "en": "Daffodil yellow",
+      "fr": "Jaune narcisse",
+      "es": "Amarillo narciso",
+      "it": "Giallo narciso",
+      "nl": "Narcissengeel"
+    }
+  });
 }
 
 class RAL {
@@ -83,9 +190,9 @@ class RAL {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['code'] = this.code;
-    data['scope'] = this.scope;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['code'] = code;
+    data['scope'] = scope;
     if (color != null) {
       data['color'] = color!.toJson();
     }
@@ -93,6 +200,15 @@ class RAL {
       data['names'] = names!.toJson();
     }
     return data;
+  }
+
+  widget.Color toColor() {
+    if (color != null) {
+      return widget.Color.fromRGBO(
+          color!.rgb!.r!, color!.rgb!.g!, color!.rgb!.b!, 1);
+    } else {
+      return const widget.Color.fromRGBO(0, 0, 0, 0);
+    }
   }
 }
 
@@ -109,27 +225,28 @@ class Color {
   Color.fromJson(Map<String, dynamic> json) {
     hex = json['hex'];
     websafe = json['websafe'];
-    rgb = json['rgb'] != null ? new Rgb.fromJson(json['rgb']) : null;
-    hsl = json['hsl'] != null ? new Hsl.fromJson(json['hsl']) : null;
-    hsb = json['hsb'] != null ? new Hsb.fromJson(json['hsb']) : null;
-    cmyk = json['cmyk'] != null ? new Cmyk.fromJson(json['cmyk']) : null;
+    rgb = json['rgb'] != null ? Rgb.fromJson(json['rgb']) : null;
+    hsl = json['hsl'] != null ? Hsl.fromJson(json['hsl']) : null;
+    hsb = json['hsb'] != null ? Hsb.fromJson(json['hsb']) : null;
+    cmyk = json['cmyk'] != null ? Cmyk.fromJson(json['cmyk']) : null;
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['hex'] = this.hex;
-    data['websafe'] = this.websafe;
-    if (this.rgb != null) {
-      data['rgb'] = this.rgb!.toJson();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    ;
+    data['hex'] = hex;
+    data['websafe'] = websafe;
+    if (rgb != null) {
+      data['rgb'] = rgb!.toJson();
     }
-    if (this.hsl != null) {
-      data['hsl'] = this.hsl!.toJson();
+    if (hsl != null) {
+      data['hsl'] = hsl!.toJson();
     }
-    if (this.hsb != null) {
-      data['hsb'] = this.hsb!.toJson();
+    if (hsb != null) {
+      data['hsb'] = hsb!.toJson();
     }
-    if (this.cmyk != null) {
-      data['cmyk'] = this.cmyk!.toJson();
+    if (cmyk != null) {
+      data['cmyk'] = cmyk!.toJson();
     }
     return data;
   }
@@ -149,10 +266,10 @@ class Rgb {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['r'] = this.r;
-    data['g'] = this.g;
-    data['b'] = this.b;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['r'] = r;
+    data['g'] = g;
+    data['b'] = b;
     return data;
   }
 }
@@ -171,10 +288,10 @@ class Hsl {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['h'] = this.h;
-    data['s'] = this.s;
-    data['l'] = this.l;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['h'] = h;
+    data['s'] = s;
+    data['l'] = l;
     return data;
   }
 }
@@ -193,10 +310,10 @@ class Hsb {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['h'] = this.h;
-    data['s'] = this.s;
-    data['b'] = this.b;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['h'] = h;
+    data['s'] = s;
+    data['b'] = b;
     return data;
   }
 }
@@ -217,11 +334,11 @@ class Cmyk {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['c'] = this.c;
-    data['m'] = this.m;
-    data['y'] = this.y;
-    data['k'] = this.k;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['c'] = c;
+    data['m'] = m;
+    data['y'] = y;
+    data['k'] = k;
     return data;
   }
 }
@@ -246,13 +363,13 @@ class Names {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['de'] = this.de;
-    data['en'] = this.en;
-    data['fr'] = this.fr;
-    data['es'] = this.es;
-    data['it'] = this.it;
-    data['nl'] = this.nl;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['de'] = de;
+    data['en'] = en;
+    data['fr'] = fr;
+    data['es'] = es;
+    data['it'] = it;
+    data['nl'] = nl;
     return data;
   }
 }
