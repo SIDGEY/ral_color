@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ral_color/ral_color.dart';
+import 'package:ral_color/src/ral_color.dart';
 
 void main() {
   test('adds one to input values', () {

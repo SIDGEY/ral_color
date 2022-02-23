@@ -173,7 +173,7 @@ class RALColor {
 class RAL {
   String? code;
   String? scope;
-  Color? color;
+  ColorRAL? color;
   Names? names;
 
   RAL({this.code, this.scope, this.color, this.names});
@@ -181,7 +181,7 @@ class RAL {
   RAL.fromJson(Map<String, dynamic> json) {
     code = json['code'];
     scope = json['scope'];
-    color = json['color'] != null ? Color.fromJson(json['color']) : null;
+    color = json['color'] != null ? ColorRAL.fromJson(json['color']) : null;
     names = json['names'] != null ? Names.fromJson(json['names']) : null;
   }
 
@@ -208,7 +208,7 @@ class RAL {
   }
 }
 
-class Color {
+class ColorRAL {
   String? hex;
   String? websafe;
   Rgb? rgb;
@@ -216,9 +216,9 @@ class Color {
   Hsb? hsb;
   Cmyk? cmyk;
 
-  Color({this.hex, this.websafe, this.rgb, this.hsl, this.hsb, this.cmyk});
+  ColorRAL({this.hex, this.websafe, this.rgb, this.hsl, this.hsb, this.cmyk});
 
-  Color.fromJson(Map<String, dynamic> json) {
+  ColorRAL.fromJson(Map<String, dynamic> json) {
     hex = json['hex'];
     websafe = json['websafe'];
     rgb = json['rgb'] != null ? Rgb.fromJson(json['rgb']) : null;
@@ -229,7 +229,7 @@ class Color {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
-    ;
+    
     data['hex'] = hex;
     data['websafe'] = websafe;
     if (rgb != null) {
