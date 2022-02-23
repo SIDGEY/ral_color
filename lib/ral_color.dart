@@ -1,10 +1,6 @@
 import 'package:flutter/widgets.dart' as widget;
 
 class RALColor {
-  static late RALColor _instance;
-  factory RALColor() => _instance ??= new RALColor._();
-  RALColor._();
-
   static RAL ral1000 = RAL.fromJson({
     "code": "1001",
     "scope": "classic",
