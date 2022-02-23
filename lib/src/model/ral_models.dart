@@ -1,7 +1,4 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart' as widget;
 import 'package:ral_color/src/controller/parse_json_file.dart';
 
@@ -25,7 +22,7 @@ class RAL {
     namesRal = NamesRal.fromJson(json['names']);
   }
 
-  RAL.fromNumber( int numRAL) {
+  RAL.fromNumber(int numRAL) {
     final ral = ParseJsonFile().parseJson(numRAL);
     debugPrint("MVD rla :> $ral");
   }

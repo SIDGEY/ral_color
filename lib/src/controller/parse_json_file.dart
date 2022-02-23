@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:ral_color/src/model/ral_models.dart';
@@ -16,12 +15,12 @@ class ParseJsonFile {
     final Map<String, dynamic> jsonRes =
         json.decode(jsonString) as Map<String, dynamic>;
     final RAL ral = RAL.fromJson(jsonRes[numColor.toString()]);
-    debugPrint("Color => ${ral.color.hex}");
+    // debugPrint("Color => ${ral.color.hex}");
     return ral;
   }
 
   Future<Map<int, RAL>> parseMap() async {
-    debugPrint("parseMap");
+    // debugPrint("parseMap");
     String jsonString = await _loadFromAsset();
     final Map<String, dynamic> jsonRes =
         json.decode(jsonString) as Map<String, dynamic>;
@@ -32,7 +31,7 @@ class ParseJsonFile {
       map.putIfAbsent(num, () => RAL.fromJson(jsonRes[numRal]));
     }
 
-    debugPrint("map ${map}");
+    // debugPrint("map ${map}");
     return map;
   }
 }
