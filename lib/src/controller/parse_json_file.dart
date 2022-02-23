@@ -6,8 +6,7 @@ import 'package:ral_color/src/model/ral_models.dart';
 
 class ParseJsonFile {
   Future<String> _loadFromAsset() async {
-    return await rootBundle
-        .loadString("packages/ral_color/assets/res/ral.json");
+    return await rootBundle.loadString("packages/ral_color/src/ral.json");
   }
 
   Future<RAL> parseJson(int numColor) async {
