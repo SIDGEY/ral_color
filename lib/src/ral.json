@@ -350,6 +350,7 @@
       }
     }
   },
+  {
   "1012": {
     "code": "1012",
     "scope": "classic",
@@ -386,7 +387,8 @@
       "it": "Giallo limone",
       "nl": "Citroengeel"
     }
-  },
+  }
+},{
   "1013": {
     "code": "1013",
     "scope": "classic",
@@ -423,7 +425,8 @@
       "it": "Bianco perla",
       "nl": "Parelwit"
     }
-  },
+  }
+},{
   "1014": {
     "code": "1014",
     "scope": "classic",
@@ -460,7 +463,7 @@
       "it": "Avorio",
       "nl": "Ivoorkleurig"
     }
-  },
+  }},{
   "1015": {
     "code": "1015",
     "scope": "classic",
@@ -497,7 +500,7 @@
       "it": "Avorio chiaro",
       "nl": "Licht ivoorkleurig"
     }
-  },
+  }},{
   "1016": {
     "code": "1016",
     "scope": "classic",
@@ -534,7 +537,7 @@
       "it": "Giallo zolfo",
       "nl": "Zwavelgeel"
     }
-  },
+  }},{
   "1017": {
     "code": "1017",
     "scope": "classic",
@@ -571,7 +574,7 @@
       "it": "Giallo zafferano",
       "nl": "Saffraangeel"
     }
-  },
+    }},{
   "1018": {
     "code": "1018",
     "scope": "classic",
@@ -608,7 +611,7 @@
       "it": "Giallo zinco",
       "nl": "Zinkgeel"
     }
-  },
+    }},{
   "1019": {
     "code": "1019",
     "scope": "classic",
@@ -645,7 +648,7 @@
       "it": "Beige grigiastro",
       "nl": "Grijsbeige"
     }
-  },
+    }},{
   "1020": {
     "code": "1020",
     "scope": "classic",
@@ -682,7 +685,7 @@
       "it": "Giallo olivastro",
       "nl": "Olijfgeel"
     }
-  },
+    }},{
   "1021": {
     "code": "1021",
     "scope": "classic",
@@ -719,7 +722,7 @@
       "it": "Giallo navone",
       "nl": "Koolzaadgeel"
     }
-  },
+    }},{
   "1023": {
     "code": "1023",
     "scope": "classic",
@@ -756,7 +759,7 @@
       "it": "Giallo traffico",
       "nl": "Verkeersgeel"
     }
-  },
+    }},{
   "1024": {
     "code": "1024",
     "scope": "classic",
@@ -793,7 +796,7 @@
       "it": "Giallo ocra",
       "nl": "Okergeel"
     }
-  },
+    }},{
   "1026": {
     "code": "1026",
     "scope": "classic",
@@ -830,7 +833,7 @@
       "it": "Giallo brillante",
       "nl": "Briljantgeel"
     }
-  },
+    }},{
   "1027": {
     "code": "1027",
     "scope": "classic",
@@ -867,7 +870,7 @@
       "it": "Giallo curry",
       "nl": "Kerriegeel"
     }
-  },
+    }},{
   "1028": {
     "code": "1028",
     "scope": "classic",
@@ -904,7 +907,7 @@
       "it": "Giallo melone",
       "nl": "Meloengeel"
     }
-  },
+    }},{
   "1032": {
     "code": "1032",
     "scope": "classic",
@@ -941,7 +944,7 @@
       "it": "Giallo scopa",
       "nl": "Bremgeel"
     }
-  },
+    }},{
   "1033": {
     "code": "1033",
     "scope": "classic",
@@ -978,7 +981,7 @@
       "it": "Giallo dahlien",
       "nl": "Dahliageel"
     }
-  },
+    }},{
   "1034": {
     "code": "1034",
     "scope": "classic",
@@ -1015,7 +1018,7 @@
       "it": "Giallo pastello",
       "nl": "Pastelgeel"
     }
-  },
+    }},{
   "1035": {
     "code": "1035",
     "scope": "classic",
@@ -1052,7 +1055,7 @@
       "it": "Beige perlato",
       "nl": "Parelmoer grijs"
     }
-  },
+    }},{
   "1036": {
     "code": "1036",
     "scope": "classic",
@@ -1089,7 +1092,7 @@
       "it": "Oro perlato",
       "nl": "Parelmoer goud"
     }
-  },
+    }},{
   "1037": {
     "code": "1037",
     "scope": "classic",
@@ -1126,7 +1129,7 @@
       "it": "Giallo sole",
       "nl": "Zonnegeel"
     }
-  },
+    }},{
   "2000": {
     "code": "2000",
     "scope": "classic",
@@ -1163,7 +1166,7 @@
       "it": "Arancio giallastro",
       "nl": "Geeloranje"
     }
-  },
+    }},{
   "2001": {
     "code": "2001",
     "scope": "classic",
@@ -1200,7 +1203,7 @@
       "it": "Arancio rossastro",
       "nl": "Roodoranje"
     }
-  },
+    }},{
   "2002": {
     "code": "2002",
     "scope": "classic",
@@ -1237,7 +1240,7 @@
       "it": "Arancio sanguigno",
       "nl": "Vermiljoen"
     }
-  },
+    }},{
   "2003": {
     "code": "2003",
     "scope": "classic",
@@ -1274,7 +1277,7 @@
       "it": "Arancio pastello",
       "nl": "Pasteloranje"
     }
-  },
+    }},{
   "2004": {
     "code": "2004",
     "scope": "classic",
@@ -1311,7 +1314,7 @@
       "it": "Arancio puro",
       "nl": "Zuiver oranje"
     }
-  },
+    }},{
   "2005": {
     "code": "2005",
     "scope": "classic",
@@ -1348,7 +1351,7 @@
       "it": "Arancio brillante",
       "nl": "Briljantoranje"
     }
-  },
+    }},{
   "2007": {
     "code": "2007",
     "scope": "classic",
@@ -1385,7 +1388,7 @@
       "it": "Arancio chiaro brillante",
       "nl": "Briljant lichtoranje"
     }
-  },
+    }},{
   "2008": {
     "code": "2008",
     "scope": "classic",
@@ -1422,7 +1425,7 @@
       "it": "Rosso arancio chiaro",
       "nl": "Licht roodoranje"
     }
-  },
+    }},{
   "2009": {
     "code": "2009",
     "scope": "classic",
@@ -1459,7 +1462,7 @@
       "it": "Arancio traffico",
       "nl": "Verkeersoranje"
     }
-  },
+    }},{
   "2010": {
     "code": "2010",
     "scope": "classic",
@@ -1496,7 +1499,7 @@
       "it": "Arancio segnale",
       "nl": "Signaaloranje"
     }
-  },
+    }},{
   "2011": {
     "code": "2011",
     "scope": "classic",
@@ -1533,7 +1536,7 @@
       "it": "Arancio profondo",
       "nl": "Dieporanje"
     }
-  },
+    }},{
   "2012": {
     "code": "2012",
     "scope": "classic",
@@ -1570,7 +1573,7 @@
       "it": "Arancio salmone",
       "nl": "Zalmoranje"
     }
-  },
+    }},{
   "2013": {
     "code": "2013",
     "scope": "classic",
@@ -1607,7 +1610,7 @@
       "it": "Arancio perlato",
       "nl": "Parelmoer oranje"
     }
-  },
+    }},{
   "3000": {
     "code": "3000",
     "scope": "classic",
@@ -1644,7 +1647,7 @@
       "it": "Rosso fuoco",
       "nl": "Vuurrood"
     }
-  },
+    }},{
   "3001": {
     "code": "3001",
     "scope": "classic",
@@ -1681,7 +1684,7 @@
       "it": "Rosso segnale",
       "nl": "Signaalrood"
     }
-  },
+    }},{
   "3002": {
     "code": "3002",
     "scope": "classic",
@@ -1718,7 +1721,7 @@
       "it": "Rosso carminio",
       "nl": "Karmijnrood"
     }
-  },
+    }},{
   "3003": {
     "code": "3003",
     "scope": "classic",
@@ -1755,7 +1758,7 @@
       "it": "Rosso rubino",
       "nl": "Robijnrood"
     }
-  },
+    }},{
   "3004": {
     "code": "3004",
     "scope": "classic",
@@ -1792,7 +1795,7 @@
       "it": "Rosso porpora",
       "nl": "Purperrood"
     }
-  },
+    }},{
   "3005": {
     "code": "3005",
     "scope": "classic",
@@ -1829,7 +1832,7 @@
       "it": "Rosso vino",
       "nl": "Wijnrood"
     }
-  },
+    }},{
   "3007": {
     "code": "3007",
     "scope": "classic",
@@ -1866,7 +1869,7 @@
       "it": "Rosso nerastro",
       "nl": "Zwartrood"
     }
-  },
+    }},{
   "3009": {
     "code": "3009",
     "scope": "classic",
@@ -1903,7 +1906,7 @@
       "it": "Rosso ossido",
       "nl": "Oxyderood"
     }
-  },
+    }},{
   "3011": {
     "code": "3011",
     "scope": "classic",
@@ -1940,7 +1943,7 @@
       "it": "Rosso marrone",
       "nl": "Bruinrood"
     }
-  },
+    }},{
   "3012": {
     "code": "3012",
     "scope": "classic",
@@ -1977,7 +1980,7 @@
       "it": "Rosso beige",
       "nl": "Beigerood"
     }
-  },
+    }},{
   "3013": {
     "code": "3013",
     "scope": "classic",
@@ -2014,7 +2017,7 @@
       "it": "Rosso pomodoro",
       "nl": "Tomaatrood"
     }
-  },
+    }},{
   "3014": {
     "code": "3014",
     "scope": "classic",
@@ -2051,7 +2054,7 @@
       "it": "Rosa antico",
       "nl": "Oudroze"
     }
-  },
+    }},{
   "3015": {
     "code": "3015",
     "scope": "classic",
@@ -2088,7 +2091,7 @@
       "it": "Rosa chiaro",
       "nl": "Lichtroze"
     }
-  },
+    }},{
   "3016": {
     "code": "3016",
     "scope": "classic",
@@ -2125,7 +2128,7 @@
       "it": "Rosso corallo",
       "nl": "Koraalrood"
     }
-  },
+    }},{
   "3017": {
     "code": "3017",
     "scope": "classic",
@@ -2162,7 +2165,7 @@
       "it": "Rosato",
       "nl": "Bleekrood"
     }
-  },
+    }},{
   "3018": {
     "code": "3018",
     "scope": "classic",
@@ -2199,7 +2202,7 @@
       "it": "Rosso fragola",
       "nl": "Aardbeirood"
     }
-  },
+    }},{
   "3020": {
     "code": "3020",
     "scope": "classic",
@@ -2236,7 +2239,7 @@
       "it": "Rosso traffico",
       "nl": "Verkeersrood"
     }
-  },
+    }},{
   "3022": {
     "code": "3022",
     "scope": "classic",
@@ -2273,7 +2276,7 @@
       "it": "Rosso salmone",
       "nl": "Zalmrood"
     }
-  },
+    }},{
   "3024": {
     "code": "3024",
     "scope": "classic",
@@ -2310,7 +2313,7 @@
       "it": "Rosso brillante",
       "nl": "Briljantrood"
     }
-  },
+    }},{
   "3026": {
     "code": "3026",
     "scope": "classic",
@@ -2347,7 +2350,7 @@
       "it": "Rosso chiaro brillante",
       "nl": "Briljant lichtrood"
     }
-  },
+    }},{
   "3027": {
     "code": "3027",
     "scope": "classic",
@@ -2384,7 +2387,7 @@
       "it": "Rosso lampone",
       "nl": "Framboosrood"
     }
-  },
+    }},{
   "3028": {
     "code": "3028",
     "scope": "classic",
@@ -2421,7 +2424,7 @@
       "it": "Rosso puro",
       "nl": "Zuiver rood "
     }
-  },
+    }},{
   "3031": {
     "code": "3031",
     "scope": "classic",
@@ -2458,7 +2461,7 @@
       "it": "Rosso oriente",
       "nl": "Oriëntrood"
     }
-  },
+    }},{
   "3032": {
     "code": "3032",
     "scope": "classic",
@@ -2495,7 +2498,7 @@
       "it": "Rosso rubino perlato",
       "nl": "Parelmoer donkerrood"
     }
-  },
+    }},{
   "3033": {
     "code": "3033",
     "scope": "classic",
@@ -2532,7 +2535,7 @@
       "it": "Rosa perlato",
       "nl": "Parelmoer lichtrood"
     }
-  },
+    }},{
   "4001": {
     "code": "4001",
     "scope": "classic",
@@ -2569,7 +2572,7 @@
       "it": "Lilla rossastro",
       "nl": "Roodlila"
     }
-  },
+    }},{
   "4002": {
     "code": "4002",
     "scope": "classic",
@@ -2606,7 +2609,7 @@
       "it": "Viola rossastro",
       "nl": "Roodpaars"
     }
-  },
+    }},{
   "4003": {
     "code": "4003",
     "scope": "classic",
@@ -2643,7 +2646,7 @@
       "it": "Viola erica",
       "nl": "Heidepaars"
     }
-  },
+    }},{
   "4004": {
     "code": "4004",
     "scope": "classic",
@@ -2680,7 +2683,7 @@
       "it": "Viola bordeaux",
       "nl": "Bordeuaxpaars"
     }
-  },
+    }},{
   "4005": {
     "code": "4005",
     "scope": "classic",
@@ -2717,7 +2720,7 @@
       "it": "Lilla bluastro",
       "nl": "Blauwlila"
     }
-  },
+    }},{
   "4006": {
     "code": "4006",
     "scope": "classic",
@@ -2754,7 +2757,7 @@
       "it": "Porpora traffico",
       "nl": "Verkeerspurper"
     }
-  },
+    }},{
   "4007": {
     "code": "4007",
     "scope": "classic",
@@ -2791,7 +2794,7 @@
       "it": "Porpora violetto",
       "nl": "Purperviolet"
     }
-  },
+    }},{
   "4008": {
     "code": "4008",
     "scope": "classic",
@@ -2828,7 +2831,7 @@
       "it": "Violetto segnale",
       "nl": "Signaalviolet"
     }
-  },
+    }},{
   "4009": {
     "code": "4009",
     "scope": "classic",
@@ -2865,7 +2868,7 @@
       "it": "Violetto pastello",
       "nl": "Pastelviolet"
     }
-  },
+    }},{
   "4010": {
     "code": "4010",
     "scope": "classic",
@@ -2902,7 +2905,7 @@
       "it": "Tele Magenta",
       "nl": "Telemagenta"
     }
-  },
+    }},{
   "4011": {
     "code": "4011",
     "scope": "classic",
@@ -2939,7 +2942,7 @@
       "it": "Violetto perlato",
       "nl": "Parelmoer donkerviolet"
     }
-  },
+    }},{
   "4012": {
     "code": "4012",
     "scope": "classic",
@@ -2976,7 +2979,7 @@
       "it": "Mora perlato",
       "nl": "Parelmoer lichtviolet"
     }
-  },
+    }},{
   "5000": {
     "code": "5000",
     "scope": "classic",
@@ -3013,7 +3016,7 @@
       "it": "Blu violaceo",
       "nl": "Paarsblauw"
     }
-  },
+    }},{
   "5001": {
     "code": "5001",
     "scope": "classic",
@@ -3050,7 +3053,7 @@
       "it": "Blu verdastro",
       "nl": "Groenblauw"
     }
-  },
+    }},{
   "5002": {
     "code": "5002",
     "scope": "classic",
@@ -3087,7 +3090,7 @@
       "it": "Blu oltremare",
       "nl": "Ultramarijn blauw"
     }
-  },
+    }},{
   "5003": {
     "code": "5003",
     "scope": "classic",
@@ -3124,7 +3127,7 @@
       "it": "Blu zaffiro",
       "nl": "Saffierblauw"
     }
-  },
+    }},{
   "5004": {
     "code": "5004",
     "scope": "classic",
@@ -3161,7 +3164,7 @@
       "it": "Blu nerastro",
       "nl": "Zwartblauw"
     }
-  },
+    }},{
   "5005": {
     "code": "5005",
     "scope": "classic",
@@ -3198,7 +3201,7 @@
       "it": "Blu segnale",
       "nl": "Signaalblauw"
     }
-  },
+    }},{
   "5007": {
     "code": "5007",
     "scope": "classic",
@@ -3235,7 +3238,7 @@
       "it": "Blu brillante",
       "nl": "Briljantblauw"
     }
-  },
+    }},{
   "5008": {
     "code": "5008",
     "scope": "classic",
@@ -3272,7 +3275,7 @@
       "it": "Blu grigiastro",
       "nl": "Grijsblauw"
     }
-  },
+    }},{
   "5009": {
     "code": "5009",
     "scope": "classic",
@@ -3309,7 +3312,7 @@
       "it": "Blu azzurro",
       "nl": "Azuurblauw"
     }
-  },
+    }},{
   "5010": {
     "code": "5010",
     "scope": "classic",
@@ -3346,7 +3349,7 @@
       "it": "Blu genziana",
       "nl": "Gentiaanblauw"
     }
-  },
+    }},{
   "5011": {
     "code": "5011",
     "scope": "classic",
@@ -3383,7 +3386,7 @@
       "it": "Blu acciaio",
       "nl": "Staalblauw"
     }
-  },
+    }},{
   "5012": {
     "code": "5012",
     "scope": "classic",
@@ -3420,7 +3423,7 @@
       "it": "Blu luce",
       "nl": "Lichtblauw"
     }
-  },
+    }},{
   "5013": {
     "code": "5013",
     "scope": "classic",
@@ -3457,7 +3460,7 @@
       "it": "Blu cobalto",
       "nl": "Kobaltblauw"
     }
-  },
+    }},{
   "5014": {
     "code": "5014",
     "scope": "classic",
@@ -3494,7 +3497,7 @@
       "it": "Blu colomba",
       "nl": "Duifblauw"
     }
-  },
+    }},{
   "5015": {
     "code": "5015",
     "scope": "classic",
@@ -3531,7 +3534,7 @@
       "it": "Blu cielo",
       "nl": "Hemelsblauw"
     }
-  },
+    }},{
   "5017": {
     "code": "5017",
     "scope": "classic",
@@ -3568,7 +3571,7 @@
       "it": "Blu traffico",
       "nl": "Verkeersblauw"
     }
-  },
+    }},{
   "5018": {
     "code": "5018",
     "scope": "classic",
@@ -3605,7 +3608,7 @@
       "it": "Blu turchese",
       "nl": "Turkooisblauw"
     }
-  },
+    }},{
   "5019": {
     "code": "5019",
     "scope": "classic",
@@ -3642,7 +3645,7 @@
       "it": "Blu Capri",
       "nl": "Capriblauw"
     }
-  },
+    }},{
   "5020": {
     "code": "5020",
     "scope": "classic",
@@ -3679,7 +3682,7 @@
       "it": "Blu oceano",
       "nl": "Oceaanblauw"
     }
-  },
+    }},{
   "5021": {
     "code": "5021",
     "scope": "classic",
@@ -3716,7 +3719,7 @@
       "it": "Blu acqua",
       "nl": "Waterblauw"
     }
-  },
+    }},{
   "5022": {
     "code": "5022",
     "scope": "classic",
@@ -3753,7 +3756,7 @@
       "it": "Blu notte",
       "nl": "Nachtblauw"
     }
-  },
+    }},{
   "5023": {
     "code": "5023",
     "scope": "classic",
@@ -3790,7 +3793,7 @@
       "it": "Blu distante",
       "nl": "Verblauw"
     }
-  },
+    }},{
   "5024": {
     "code": "5024",
     "scope": "classic",
@@ -3827,7 +3830,7 @@
       "it": "Blu pastello",
       "nl": "Pastelblauw"
     }
-  },
+   }},{
   "5025": {
     "code": "5025",
     "scope": "classic",
@@ -3864,7 +3867,7 @@
       "it": "Blu genziana perlato",
       "nl": "Parelmoer blauw"
     }
-  },
+    }},{
   "5026": {
     "code": "5026",
     "scope": "classic",
@@ -3901,7 +3904,7 @@
       "it": "Blu notte perlato",
       "nl": "Parelmoer nachtblauw"
     }
-  },
+    }},{
   "6000": {
     "code": "6000",
     "scope": "classic",
@@ -3938,7 +3941,7 @@
       "it": "Verde patina",
       "nl": "Patinagroen"
     }
-  },
+    }},{
   "6001": {
     "code": "6001",
     "scope": "classic",
@@ -3975,7 +3978,7 @@
       "it": "Verde smeraldo",
       "nl": "Smaragdgroen"
     }
-  },
+    }},{
   "6002": {
     "code": "6002",
     "scope": "classic",
@@ -4012,7 +4015,7 @@
       "it": "Verde foglia",
       "nl": "Loofgroen"
     }
-  },
+    }},{
   "6003": {
     "code": "6003",
     "scope": "classic",
@@ -4049,7 +4052,7 @@
       "it": "Verde oliva",
       "nl": "Olijfgroen"
     }
-  },
+    }},{
   "6004": {
     "code": "6004",
     "scope": "classic",
@@ -4086,7 +4089,7 @@
       "it": "Verde bluastro",
       "nl": "Blauwgroen"
     }
-  },
+    }},{
   "6005": {
     "code": "6005",
     "scope": "classic",
@@ -4123,7 +4126,7 @@
       "it": "Verde muschio",
       "nl": "Mosgroen"
     }
-  },
+    }},{
   "6006": {
     "code": "6006",
     "scope": "classic",
@@ -4160,7 +4163,7 @@
       "it": "Oliva grigiastro",
       "nl": "Grijs olijfgroen"
     }
-  },
+    }},{
   "6007": {
     "code": "6007",
     "scope": "classic",
@@ -4197,7 +4200,7 @@
       "it": "Verde bottiglia",
       "nl": "Flessengroen"
     }
-  },
+    }},{
   "6008": {
     "code": "6008",
     "scope": "classic",
@@ -4234,7 +4237,7 @@
       "it": "Verde brunastro",
       "nl": "Bruingroen"
     }
-  },
+    }},{
   "6009": {
     "code": "6009",
     "scope": "classic",
@@ -4271,7 +4274,7 @@
       "it": "Verde abete",
       "nl": "Dennengroen"
     }
-  },
+     }},{
   "6010": {
     "code": "6010",
     "scope": "classic",
@@ -4308,7 +4311,7 @@
       "it": "Verde erba",
       "nl": "Grasgroen"
     }
-  },
+     }},{
   "6011": {
     "code": "6011",
     "scope": "classic",
@@ -4345,7 +4348,7 @@
       "it": "Verde reseda",
       "nl": "Resedagroen"
     }
-  },
+     }},{
   "6012": {
     "code": "6012",
     "scope": "classic",
@@ -4382,7 +4385,7 @@
       "it": "Verde nerastro",
       "nl": "Zwartgroen"
     }
-  },
+     }},{
   "6013": {
     "code": "6013",
     "scope": "classic",
@@ -4419,7 +4422,7 @@
       "it": "Verde canna",
       "nl": "Rietgroen"
     }
-  },
+     }},{
   "6014": {
     "code": "6014",
     "scope": "classic",
@@ -4456,7 +4459,7 @@
       "it": "Oliva giallastro",
       "nl": "Geel olijfgroen"
     }
-  },
+     }},{
   "6015": {
     "code": "6015",
     "scope": "classic",
@@ -4493,7 +4496,7 @@
       "it": "Oliva nerastro",
       "nl": "Zwart olijfgroen"
     }
-  },
+     }},{
   "6016": {
     "code": "6016",
     "scope": "classic",
@@ -4530,7 +4533,7 @@
       "it": "Verde turchese",
       "nl": "Turkooisgroen"
     }
-  },
+     }},{
   "6017": {
     "code": "6017",
     "scope": "classic",
@@ -4567,7 +4570,7 @@
       "it": "Verde maggio",
       "nl": "Meigroen"
     }
-  },
+     }},{
   "6018": {
     "code": "6018",
     "scope": "classic",
@@ -4604,7 +4607,7 @@
       "it": "Verde giallastro",
       "nl": "Geelgroen"
     }
-  },
+     }},{
   "6019": {
     "code": "6019",
     "scope": "classic",
@@ -4641,7 +4644,7 @@
       "it": "Verde biancastro",
       "nl": "Witgroen"
     }
-  },
+     }},{
   "6020": {
     "code": "6020",
     "scope": "classic",
@@ -4678,7 +4681,7 @@
       "it": "Verde cromo",
       "nl": "Chroomoxyde groen"
     }
-  },
+     }},{
   "6021": {
     "code": "6021",
     "scope": "classic",
@@ -4715,7 +4718,7 @@
       "it": "Verde pallido",
       "nl": "Bleekgroen"
     }
-  },
+     }},{
   "6022": {
     "code": "6022",
     "scope": "classic",
@@ -4752,7 +4755,7 @@
       "it": "Oliva brunastro",
       "nl": "Bruin olijfgroen"
     }
-  },
+     }},{
   "6024": {
     "code": "6024",
     "scope": "classic",
@@ -4789,7 +4792,7 @@
       "it": "Verde traffico",
       "nl": "Verkeersgroen"
     }
-  },
+     }},{
   "6025": {
     "code": "6025",
     "scope": "classic",
@@ -4826,7 +4829,7 @@
       "it": "Verde felce",
       "nl": "Varengroen"
     }
-  },
+     }},{
   "6026": {
     "code": "6026",
     "scope": "classic",
@@ -4863,7 +4866,7 @@
       "it": "Verde opale",
       "nl": "Opaalgroen"
     }
-  },
+     }},{
   "6027": {
     "code": "6027",
     "scope": "classic",
@@ -4900,7 +4903,7 @@
       "it": "Verde chiaro",
       "nl": "Lichtgroen"
     }
-  },
+     }},{
   "6028": {
     "code": "6028",
     "scope": "classic",
@@ -4937,7 +4940,7 @@
       "it": "Verde pino",
       "nl": "Pijnboomgroen"
     }
-  },
+     }},{
   "6029": {
     "code": "6029",
     "scope": "classic",
@@ -4974,7 +4977,7 @@
       "it": "Verde menta",
       "nl": "Mintgroen"
     }
-  },
+     }},{
   "6032": {
     "code": "6032",
     "scope": "classic",
@@ -5011,7 +5014,7 @@
       "it": "Verde segnale",
       "nl": "Signaalgroen"
     }
-  },
+     }},{
   "6033": {
     "code": "6033",
     "scope": "classic",
@@ -5048,7 +5051,7 @@
       "it": "Turchese menta",
       "nl": "Mintturquoise"
     }
-  },
+     }},{
   "6034": {
     "code": "6034",
     "scope": "classic",
@@ -5085,7 +5088,7 @@
       "it": "Turchese pastello",
       "nl": "Pastelturquoise"
     }
-  },
+     }},{
   "6035": {
     "code": "6035",
     "scope": "classic",
@@ -5122,7 +5125,7 @@
       "it": "Verde perlato",
       "nl": "Parelmoer donkergroen"
     }
-  },
+    }},{
   "6036": {
     "code": "6036",
     "scope": "classic",
@@ -5159,7 +5162,7 @@
       "it": "Verde opalo perlato",
       "nl": "Parelmoer lichtgroen"
     }
-  },
+    }},{
   "6037": {
     "code": "6037",
     "scope": "classic",
@@ -5196,7 +5199,7 @@
       "it": "Verde puro",
       "nl": "Zuiver groen "
     }
-  },
+    }},{
   "6038": {
     "code": "6038",
     "scope": "classic",
@@ -5233,7 +5236,7 @@
       "it": "Verde brillante",
       "nl": "Briljantgroen "
     }
-  },
+    }},{
   "7000": {
     "code": "7000",
     "scope": "classic",
@@ -5270,7 +5273,7 @@
       "it": "Grigio vaio",
       "nl": "Pelsgrijs"
     }
-  },
+    }},{
   "7001": {
     "code": "7001",
     "scope": "classic",
@@ -5307,7 +5310,7 @@
       "it": "Grigio argento",
       "nl": "Zilvergrijs"
     }
-  },
+    }},{
   "7002": {
     "code": "7002",
     "scope": "classic",
@@ -5381,7 +5384,7 @@
       "it": "Grigio muschio",
       "nl": "Mosgrijs"
     }
-  },
+    }},{
   "7004": {
     "code": "7004",
     "scope": "classic",
@@ -5418,7 +5421,7 @@
       "it": "Grigio segnale",
       "nl": "Signaalgrijs"
     }
-  },
+    }},{
   "7005": {
     "code": "7005",
     "scope": "classic",
@@ -5455,7 +5458,7 @@
       "it": "Grigio topo",
       "nl": "Muisgrijs"
     }
-  },
+    }},{
   "7006": {
     "code": "7006",
     "scope": "classic",
@@ -5492,7 +5495,7 @@
       "it": "Grigio beige",
       "nl": "Beigegrijs"
     }
-  },
+    }},{
   "7008": {
     "code": "7008",
     "scope": "classic",
@@ -5529,7 +5532,7 @@
       "it": "Grigio kaki",
       "nl": "Kakigrijs"
     }
-  },
+    }},{
   "7009": {
     "code": "7009",
     "scope": "classic",
@@ -5566,7 +5569,7 @@
       "it": "Grigio verdastro",
       "nl": "Groengrijs"
     }
-  },
+    }},{
   "7010": {
     "code": "7010",
     "scope": "classic",
@@ -5603,7 +5606,7 @@
       "it": "Grigio tenda",
       "nl": "Zeildoekgrijs"
     }
-  },
+    }},{
   "7011": {
     "code": "7011",
     "scope": "classic",
@@ -5640,7 +5643,7 @@
       "it": "Grigio ferro",
       "nl": "IJzergrijs"
     }
-  },
+    }},{
   "7012": {
     "code": "7012",
     "scope": "classic",
@@ -5677,7 +5680,7 @@
       "it": "Grigio basalto",
       "nl": "Bazaltgrijs"
     }
-  },
+    }},{
   "7013": {
     "code": "7013",
     "scope": "classic",
@@ -5714,7 +5717,7 @@
       "it": "Grigio brunastro",
       "nl": "Bruingrijs"
     }
-  },
+    }},{
   "7015": {
     "code": "7015",
     "scope": "classic",
@@ -5751,7 +5754,7 @@
       "it": "Grigio ardesia",
       "nl": "Leigrijs"
     }
-  },
+    }},{
   "7016": {
     "code": "7016",
     "scope": "classic",
@@ -5788,7 +5791,7 @@
       "it": "Grigio antracite",
       "nl": "Antracietgrijs"
     }
-  },
+    }},{
   "7021": {
     "code": "7021",
     "scope": "classic",
@@ -5825,7 +5828,7 @@
       "it": "Grigio nerastro",
       "nl": "Zwartgrijs"
     }
-  },
+    }},{
   "7022": {
     "code": "7022",
     "scope": "classic",
@@ -5862,7 +5865,7 @@
       "it": "Grigio ombra",
       "nl": "Ombergrijs"
     }
-  },
+    }},{
   "7023": {
     "code": "7023",
     "scope": "classic",
@@ -5899,7 +5902,7 @@
       "it": "Grigio calcestruzzo",
       "nl": "Betongrijs"
     }
-  },
+    }},{
   "7024": {
     "code": "7024",
     "scope": "classic",
@@ -5936,7 +5939,7 @@
       "it": "Grigio grafite",
       "nl": "Grafietgrijs"
     }
-  },
+    }},{
   "7026": {
     "code": "7026",
     "scope": "classic",
@@ -5973,7 +5976,7 @@
       "it": "Grigio granito",
       "nl": "Granietgrijs"
     }
-  },
+    }},{
   "7030": {
     "code": "7030",
     "scope": "classic",
@@ -6010,7 +6013,7 @@
       "it": "Grigio pietra",
       "nl": "Steengrijs"
     }
-  },
+    }},{
   "7031": {
     "code": "7031",
     "scope": "classic",
@@ -6047,7 +6050,7 @@
       "it": "Grigio bluastro",
       "nl": "Blauwgrijs"
     }
-  },
+    }},{
   "7032": {
     "code": "7032",
     "scope": "classic",
@@ -6084,7 +6087,7 @@
       "it": "Grigio ghiaia",
       "nl": "Kiezelgrijs"
     }
-  },
+    }},{
   "7033": {
     "code": "7033",
     "scope": "classic",
@@ -6121,7 +6124,7 @@
       "it": "Grigio cemento",
       "nl": "Cementgrijs"
     }
-  },
+    }},{
   "7034": {
     "code": "7034",
     "scope": "classic",
@@ -6158,7 +6161,7 @@
       "it": "Grigio giallastro",
       "nl": "Geelgrijs"
     }
-  },
+    }},{
   "7035": {
     "code": "7035",
     "scope": "classic",
@@ -6195,7 +6198,7 @@
       "it": "Grigio luce",
       "nl": "Lichtgrijs"
     }
-  },
+    }},{
   "7036": {
     "code": "7036",
     "scope": "classic",
@@ -6232,7 +6235,7 @@
       "it": "Grigio platino",
       "nl": "Platinagrijs"
     }
-  },
+    }},{
   "7037": {
     "code": "7037",
     "scope": "classic",
@@ -6269,7 +6272,7 @@
       "it": "Grigio polvere",
       "nl": "Stofgrijs"
     }
-  },
+    }},{
   "7038": {
     "code": "7038",
     "scope": "classic",
@@ -6306,7 +6309,7 @@
       "it": "Grigio agata",
       "nl": "Agaatgrijs"
     }
-  },
+    }},{
   "7039": {
     "code": "7039",
     "scope": "classic",
@@ -6343,7 +6346,7 @@
       "it": "Grigio quarzo",
       "nl": "Kwartsgrijs"
     }
-  },
+    }},{
   "7040": {
     "code": "7040",
     "scope": "classic",
@@ -6380,7 +6383,7 @@
       "it": "Grigio finestra",
       "nl": "Venstergrijs"
     }
-  },
+    }},{
   "7042": {
     "code": "7042",
     "scope": "classic",
@@ -6417,7 +6420,7 @@
       "it": "Grigio traffico A",
       "nl": "Verkeersgrijs A"
     }
-  },
+    }},{
   "7043": {
     "code": "7043",
     "scope": "classic",
@@ -6454,7 +6457,7 @@
       "it": "Grigio traffico B",
       "nl": "Verkeersgrijs B"
     }
-  },
+    }},{
   "7044": {
     "code": "7044",
     "scope": "classic",
@@ -6491,7 +6494,7 @@
       "it": "Grigio seta",
       "nl": "Zijdegrijs"
     }
-  },
+    }},{
   "7045": {
     "code": "7045",
     "scope": "classic",
@@ -6528,7 +6531,7 @@
       "it": "Grigio tele 1",
       "nl": "Telegrijs 1"
     }
-  },
+    }},{
   "7046": {
     "code": "7046",
     "scope": "classic",
@@ -6565,7 +6568,7 @@
       "it": "Grigio tele 2",
       "nl": "Telegrijs 2"
     }
-  },
+    }},{
   "7047": {
     "code": "7047",
     "scope": "classic",
@@ -6602,7 +6605,7 @@
       "it": "Grigio tele 4",
       "nl": "Telegrijs 4"
     }
-  },
+    }},{
   "7048": {
     "code": "7048",
     "scope": "classic",
@@ -6639,7 +6642,7 @@
       "it": "Grigio topo perlato",
       "nl": "Parelmoer muisgrijs"
     }
-  },
+    }},{
   "8000": {
     "code": "8000",
     "scope": "classic",
@@ -6676,7 +6679,7 @@
       "it": "Marrone verdastro",
       "nl": "Groenbruin"
     }
-  },
+    }},{
   "8001": {
     "code": "8001",
     "scope": "classic",
@@ -6713,7 +6716,7 @@
       "it": "Marrone ocra",
       "nl": "Okerbruin"
     }
-  },
+    }},{
   "8002": {
     "code": "8002",
     "scope": "classic",
@@ -6750,7 +6753,7 @@
       "it": "Marrone segnale",
       "nl": "Signaalbruin"
     }
-  },
+    }},{
   "8003": {
     "code": "8003",
     "scope": "classic",
@@ -6787,7 +6790,7 @@
       "it": "Marrone fango",
       "nl": "Leembruin"
     }
-  },
+    }},{
   "8004": {
     "code": "8004",
     "scope": "classic",
@@ -6824,7 +6827,7 @@
       "it": "Marrone rame",
       "nl": "Koperbruin"
     }
-  },
+    }},{
   "8007": {
     "code": "8007",
     "scope": "classic",
@@ -6861,7 +6864,7 @@
       "it": "Marrone capriolo",
       "nl": "Reebruin"
     }
-  },
+    }},{
   "8008": {
     "code": "8008",
     "scope": "classic",
@@ -6898,7 +6901,7 @@
       "it": "Marrone oliva",
       "nl": "Olijfbruin"
     }
-  },
+    }},{
   "8011": {
     "code": "8011",
     "scope": "classic",
@@ -6935,7 +6938,7 @@
       "it": "Marrone noce",
       "nl": "Notenbruin"
     }
-  },
+    }},{
   "8012": {
     "code": "8012",
     "scope": "classic",
@@ -6972,7 +6975,7 @@
       "it": "Marrone rossiccio",
       "nl": "Roodbruin"
     }
-  },
+    }},{
   "8014": {
     "code": "8014",
     "scope": "classic",
@@ -7009,7 +7012,7 @@
       "it": "Marrone seppia",
       "nl": "Sepiabruin"
     }
-  },
+    }},{
   "8015": {
     "code": "8015",
     "scope": "classic",
@@ -7046,7 +7049,7 @@
       "it": "Marrone castagna",
       "nl": "Kastanjebruin"
     }
-  },
+    }},{
   "8016": {
     "code": "8016",
     "scope": "classic",
@@ -7083,7 +7086,7 @@
       "it": "Marrone mogano",
       "nl": "Mahoniebruin"
     }
-  },
+    }},{
   "8017": {
     "code": "8017",
     "scope": "classic",
@@ -7120,7 +7123,7 @@
       "it": "Marrone cioccolata",
       "nl": "Chocoladebruin"
     }
-  },
+    }},{
   "8019": {
     "code": "8019",
     "scope": "classic",
@@ -7157,7 +7160,7 @@
       "it": "Marrone grigiastro",
       "nl": "Grijsbruin"
     }
-  },
+    }},{
   "8022": {
     "code": "8022",
     "scope": "classic",
@@ -7194,7 +7197,7 @@
       "it": "Marrone nerastro",
       "nl": "Zwartbruin"
     }
-  },
+    }},{
   "8023": {
     "code": "8023",
     "scope": "classic",
@@ -7231,7 +7234,7 @@
       "it": "Marrone arancio",
       "nl": "Oranjebruin"
     }
-  },
+    }},{
   "8024": {
     "code": "8024",
     "scope": "classic",
@@ -7268,7 +7271,7 @@
       "it": "Marrone beige",
       "nl": "Beigebruin"
     }
-  },
+    }},{
   "8025": {
     "code": "8025",
     "scope": "classic",
@@ -7305,7 +7308,7 @@
       "it": "Marrone pallido",
       "nl": "Bleekbruin"
     }
-  },
+    }},{
   "8028": {
     "code": "8028",
     "scope": "classic",
@@ -7342,7 +7345,7 @@
       "it": "Marrone terra",
       "nl": "Terrabruin"
     }
-  },
+    }},{
   "8029": {
     "code": "8029",
     "scope": "classic",
@@ -7379,7 +7382,7 @@
       "it": "Rame perlato",
       "nl": "Parelmoer koper"
     }
-  },
+    }},{
   "9001": {
     "code": "9001",
     "scope": "classic",
@@ -7416,7 +7419,7 @@
       "it": "Bianco crema",
       "nl": "Crèmewit"
     }
-  },
+    }},{
   "9002": {
     "code": "9002",
     "scope": "classic",
@@ -7453,7 +7456,7 @@
       "it": "Bianco grigiastro",
       "nl": "Grijswit"
     }
-  },
+    }},{
   "9003": {
     "code": "9003",
     "scope": "classic",
@@ -7490,7 +7493,7 @@
       "it": "Bianco segnale",
       "nl": "Signaalwit"
     }
-  },
+    }},{
   "9004": {
     "code": "9004",
     "scope": "classic",
@@ -7527,7 +7530,7 @@
       "it": "Nero segnale",
       "nl": "Signaalzwart"
     }
-  },
+    }},{
   "9005": {
     "code": "9005",
     "scope": "classic",
@@ -7564,7 +7567,7 @@
       "it": "Nero intenso",
       "nl": "Gitzwart"
     }
-  },
+    }},{
   "9006": {
     "code": "9006",
     "scope": "classic",
@@ -7601,7 +7604,7 @@
       "it": "Alluminio brillante",
       "nl": "Blank aluminiumkleurig"
     }
-  },
+    }},{
   "9007": {
     "code": "9007",
     "scope": "classic",
@@ -7638,7 +7641,7 @@
       "it": "Alluminio grigiastro",
       "nl": "Grijs aluminiumkleurig"
     }
-  },
+    }},{
   "9010": {
     "code": "9010",
     "scope": "classic",
@@ -7675,7 +7678,7 @@
       "it": "Bianco puro",
       "nl": "Zuiver wit"
     }
-  },
+    }},{
   "9011": {
     "code": "9011",
     "scope": "classic",
@@ -7712,7 +7715,7 @@
       "it": "Nero grafite",
       "nl": "Grafietzwart"
     }
-  },
+    }},{
   "9016": {
     "code": "9016",
     "scope": "classic",
@@ -7749,7 +7752,7 @@
       "it": "Bianco traffico",
       "nl": "Verkeerswit"
     }
-  },
+    }},{
   "9017": {
     "code": "9017",
     "scope": "classic",
@@ -7786,7 +7789,7 @@
       "it": "Nero traffico",
       "nl": "Verkeerszwart"
     }
-  },
+    }},{
   "9018": {
     "code": "9018",
     "scope": "classic",
@@ -7823,7 +7826,7 @@
       "it": "Bianco papiro",
       "nl": "Papyruswit"
     }
-  },
+    }},{
   "9022": {
     "code": "9022",
     "scope": "classic",
@@ -7860,7 +7863,7 @@
       "it": "Grigio chiaro perlato",
       "nl": "Parelmoer lichtgrijs"
     }
-  },
+    }},{
   "9023": {
     "code": "9023",
     "scope": "classic",
@@ -7898,4 +7901,5 @@
       "nl": "Parelmoer donkergrijs"
     }
   }
-}
+ }
+]
