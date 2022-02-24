@@ -18,7 +18,8 @@ class RALLibController {
 
   Future<bool> loadFile() async {
     map = await ParseJsonFile().parseMap();
-    return map.isNotEmpty;
+    fileLoaded = map.isNotEmpty;
+    return fileLoaded;
   }
 
   bool fileLoaded = false;

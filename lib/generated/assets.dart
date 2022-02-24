@@ -2,5 +2,5 @@
 class Assets {
   Assets._();
 
-  // static const String resRal = 'assets/res/ral.json';
+  static const String assetsRal = 'assets/ral.json';
 }
