@@ -6,7 +6,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   bool isInit = await RALColor.initialisation();
   if (!isInit) {
-    print("AIE c'est pas bon !");
+    debugPrint("AIE c'est pas bon !");
   }
   runApp(const MyApp());
 }
