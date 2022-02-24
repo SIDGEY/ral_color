@@ -12,20 +12,29 @@ class RALLibController {
     return _singleton;
   }
 
-  RALLibController._internal() {
-    loadFile();
-  }
+  RALLibController._internal();
 
   Map<int, RAL> map = <int, RAL>{};
 
-  void loadFile() async {
+  Future<bool> loadFile() async {
     map = await ParseJsonFile().parseMap();
+    return map.isNotEmpty;
   }
+
+  bool fileLoaded = false;
 }
 
 class RALColor {
   static Map<int, RAL> getMap() {
-    return _ctrl.map;
+    return _controller().map;
+  }
+
+  static RALLibController _controller() {
+    return _ctrl;
+  }
+
+  static Future<bool> initialisation() async {
+    return await _controller().loadFile();
   }
 
   late RAL _ral;

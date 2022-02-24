@@ -1,12 +1,12 @@
 import 'package:example/view/color_ral_view_factoriser.dart';
-import 'package:example/view/color_ral_view_four_thousands.dart';
-import 'package:example/view/color_ral_view_one_thousand.dart';
-import 'package:example/view/color_ral_view_three_thousands.dart';
-import 'package:example/view/color_ral_view_two_thousands.dart';
-import 'package:example/widget/text_presentation.dart';
 import 'package:flutter/material.dart';
+import 'package:ral_color/ral_color_theme.dart';
 
-void main() {
+void main() async {
+  bool isInit = await RALColor.initialisation();
+  if(!isInit){
+    print("AIE c'est pas bon !");
+  }
   runApp(const MyApp());
 }
 
@@ -39,31 +39,30 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           shrinkWrap: true,
           children: const [
-            TextPresentation(title: "RAL 1000"),
-            ColorView1000(),
-            TextPresentation(title: "RAL 2000"),
-            ColorView2000(),
-            TextPresentation(title: "RAL 3000"),
-            ColorView3000(),
-            TextPresentation(title: "RAL 4000"),
-            ColorView4000(),
-            TextPresentation(title: "RAL 5000"),
+            ColorViewBetween(
+              start: 1000,
+            ),
+            ColorViewBetween(
+              start: 2000,
+            ),
+            ColorViewBetween(
+              start: 3000,
+            ),
+            ColorViewBetween(
+              start: 4000,
+            ),
             ColorViewBetween(
               start: 5000,
             ),
-            TextPresentation(title: "RAL 6000"),
             ColorViewBetween(
               start: 6000,
             ),
-            TextPresentation(title: "RAL 7000"),
             ColorViewBetween(
               start: 7000,
             ),
-            TextPresentation(title: "RAL 8000"),
             ColorViewBetween(
               start: 8000,
             ),
-            TextPresentation(title: "RAL 9000"),
             ColorViewBetween(
               start: 9000,
             ),
