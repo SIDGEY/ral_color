@@ -6,11 +6,17 @@ import 'controller/parse_json_file.dart';
 RALLibController _ctrl = RALLibController();
 
 class RALLibController {
-  Map<int, RAL> map = <int, RAL>{};
+  static final RALLibController _singleton = RALLibController._internal();
 
-  RALLibController() {
+  factory RALLibController() {
+    return _singleton;
+  }
+
+  RALLibController._internal() {
     loadFile();
   }
+
+  Map<int, RAL> map = <int, RAL>{};
 
   void loadFile() async {
     map = await ParseJsonFile().parseMap();
