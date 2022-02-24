@@ -14,12 +14,10 @@ class ColorViewBetween extends StatelessWidget {
     List<int> listeRal = [];
 
     for (int key in RALColor.getMap().keys) {
-      print(key);
       if (key >= start && key < start + limit) {
         listeRal.add(key);
       }
     }
-    print(listeRal);
 
     return Padding(
       padding: const EdgeInsets.all(10.0),

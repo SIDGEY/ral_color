@@ -7,10 +7,15 @@ class TextPresentation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      title,
-      style: const TextStyle(
-        fontSize: 25.0,
+    return Material(
+      child: Center(
+        child: Text(
+          title,
+          style: const TextStyle(
+            fontSize: 25.0,
+            fontWeight: FontWeight.w800,
+          ),
+        ),
       ),
     );
   }
