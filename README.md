@@ -1,32 +1,43 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# ral_color
+A Flutter package to use and convert RAL Colors to MaterialColors, RGB, Hexadecimal, CMJN ...
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-This package will allow you to convert RAL colors to MaterialColors, RGB, Hexadecimal, CMJN ...
-
-## Getting started
-
-import 'package:ral_color/ral_color_theme.dart';
-
-## Usage
-
-
-to `/example` folder. 
+## Installation
+Add `ral_color` as a dependency in your pubspec.yaml file.
 
 ```dart
-   RALColor ralColor =  RALColor(numberRalColor: 1001); 
-   
-    
+dependencies:
+ral_color: ^0.0.3
 ```
 
-## Additional information
+## Usage
+For use RAL Colors object by following steps : 
+
+import 'package:ral_color/ral_color_theme.dart';
+```dart
+// Import the plugin
+import 'package:ral_color/ral_color_theme.dart';
+
+// call initialisation in main 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await RALColor.initialisation();
+
+  runApp(const MyApp());
+} // hace 10 minutos
+
+//In your class , you can call RALColor like: 
+RALColor ralColor = RALColor(numberRalColor: 9016);
+
+//to use Flutter Color:
+Color myRalColor = ralColor.toColor();
+
+//to get Name available language: [de,en,fr,es,it,nl] :
+String myRalNameEn = ralColor.getName().en;
+String myRalNameFr = ralColor.getName().fr;
+
+//if you need more information, you can call RAL specification like :
+RAL myRAL = ralColor.getRAL();
+
+
+```
 
