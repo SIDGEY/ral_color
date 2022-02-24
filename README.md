@@ -23,7 +23,7 @@ void main() async {
   await RALColor.initialisation();
 
   runApp(const MyApp());
-} // hace 10 minutos
+} 
 
 //In your class , you can call RALColor like: 
 RALColor ralColor = RALColor(numberRalColor: 9016);
