@@ -4,10 +4,7 @@ import 'package:ral_color/ral_color_theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  bool isInit = await RALColor.initialisation();
-  if (!isInit) {
-    debugPrint("AIE c'est pas bon !");
-  }
+  await RALColor.initialisation();
   runApp(const MyApp());
 }
 

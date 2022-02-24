@@ -11,11 +11,11 @@ class ColorViewBetween extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<int> listeRal = [];
+    List<int> listRal = [];
 
     for (int key in RALColor.getMap().keys) {
       if (key >= start && key < start + limit) {
-        listeRal.add(key);
+        listRal.add(key);
       }
     }
 
@@ -24,7 +24,6 @@ class ColorViewBetween extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
-        // crossAxisAlignment: Cr,
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -36,8 +35,8 @@ class ColorViewBetween extends StatelessWidget {
             spacing: 25.0,
             runSpacing: 25.0,
             children: [
-              ...List.generate(listeRal.length,
-                  (index) => RALColor(numberRalColor: listeRal[index])).map(
+              ...List.generate(listRal.length,
+                  (index) => RALColor(numberRalColor: listRal[index])).map(
                 (ral) => ContainerColor(
                   ralColor: ral,
                 ),
