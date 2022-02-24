@@ -27,7 +27,9 @@ class ColorViewBetween extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: TextPresentation(title: "RAL $start"),
+            child: TextPresentation(
+              title: "RAL $start",
+            ),
           ),
           Wrap(
             spacing: 25.0,
@@ -36,7 +38,7 @@ class ColorViewBetween extends StatelessWidget {
               ...List.generate(listRal.length,
                   (index) => RALColor(numberRalColor: listRal[index])).map(
                 (ral) => ContainerColor(
-                  color: ral.toColor(),
+                  ralColor: ral,
                 ),
               ),
             ],

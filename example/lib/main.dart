@@ -5,7 +5,6 @@ import 'package:ral_color/ral_color_theme.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await RALColor.initialisation();
-
   runApp(const MyApp());
 }
 
