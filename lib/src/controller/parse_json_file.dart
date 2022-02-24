@@ -2,17 +2,12 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:ral_color/generated/assets.dart';
 import 'package:ral_color/src/model/ral_models.dart';
 
 class ParseJsonFile {
   Future<String> _loadFromAsset() async {
-    print("_loadFromAsset");
-    // String str =
-    //     await rootBundle.loadString("packages/ral_color/lib/src/ral.json");
-    String str = await rootBundle.loadString(Assets.assetsRal);
-    print(str);
-    return str;
+    return await rootBundle.loadString("packages/ral_color/assets/ral.json");
+    ;
   }
 
   Future<RAL> parseJson(int numColor) async {
