@@ -1,27 +1,43 @@
-# RAL COLOR
+# ral_color
+A Flutter package to use and convert RAL Colors to MaterialColors, RGB, Hexadecimal, CMJN ...
 
-[![Plaftorm Flutter](https://img.shields.io/badge/Platform-Flutter-02569B?logo=flutter)](https://flutter.dev) [![pub package](https://img.shields.io/pub/v/ral_color.svg)](https://pub.dartlang.org/packages/ral_color) [![GitHub stars](https://img.shields.io/github/stars/SIDGEY/ral_color)](https://github.com/SIDGEY/ral_color/stargazers) [![GitHub forks](https://img.shields.io/github/forks/SIDGEY/ral_color)](https://github.com/fluttercandies/extended_text_field/network)  [![GitHub license](https://img.shields.io/github/license/SIDGEY/ral_color)](https://github.com/SIDGEY/ral_color/blob/master/LICENSE)  [![GitHub issues](https://img.shields.io/github/issues/SIDGEY/ral_color)](https://github.com/SIDGEY/ral_color/issues)
-
-This package will allow you to convert RAL colors to MaterialColors, RGB, Hexadecimal, CMJN ...
-
-## Getting started
-
-To call Ral color :
+## Installation
+Add `ral_color` as a dependency in your pubspec.yaml file.
 
 ```dart
-RALColor.ral1000
-```
-
-To call MaterialColor from RAL :
-
-```dart
-RALColor.ral1000.toColor();
+dependencies:
+ral_color: ^0.0.3
 ```
 
 ## Usage
+For use RAL Colors object by following steps : 
 
-to `/example` folder.
-
+import 'package:ral_color/ral_color_theme.dart';
 ```dart
-Color ralChoose = RALColor.ral1000.toColor();
+// Import the plugin
+import 'package:ral_color/ral_color_theme.dart';
+
+// call initialisation in main 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await RALColor.initialisation();
+
+  runApp(const MyApp());
+} 
+
+//In your class , you can call RALColor like: 
+RALColor ralColor = RALColor(numberRalColor: 9016);
+
+//to use Flutter Color:
+Color myRalColor = ralColor.toColor();
+
+//to get Name available language: [de,en,fr,es,it,nl] :
+String myRalNameEn = ralColor.getName().en;
+String myRalNameFr = ralColor.getName().fr;
+
+//if you need more information, you can call RAL specification like :
+RAL myRAL = ralColor.getRAL();
+
+
 ```
+

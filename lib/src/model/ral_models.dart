@@ -1,20 +1,30 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart' as widget;
+import 'package:ral_color/src/controller/parse_json_file.dart';
 
 class RAL {
   late final String code;
   late final String scope;
   late final ColorRAL color;
+  late final NamesRal namesRal;
 
   RAL({
     required this.code,
     required this.scope,
     required this.color,
+    required this.namesRal,
   });
 
   RAL.fromJson(Map<String, dynamic> json) {
     code = json['code'];
     scope = json['scope'];
     color = ColorRAL.fromJson(json['color']);
+    namesRal = NamesRal.fromJson(json['names']);
+  }
+
+  RAL.fromNumber(int numRAL) {
+    final ral = ParseJsonFile().parseJson(numRAL);
+    debugPrint("MVD rla :> $ral");
   }
 
   widget.Color toColor() {
@@ -126,5 +136,42 @@ class Cmyk {
     m = json['m'];
     y = json['y'];
     k = json['k'];
+  }
+}
+
+class NamesRal {
+  late final String de;
+  late final String en;
+  late final String fr;
+  late final String es;
+  late final String it;
+  late final String nl;
+
+  NamesRal(
+      {required this.de,
+      required this.en,
+      required this.fr,
+      required this.es,
+      required this.it,
+      required this.nl});
+
+  NamesRal.fromJson(Map<String, dynamic> json) {
+    de = json['de'];
+    en = json['en'];
+    fr = json['fr'];
+    es = json['es'];
+    it = json['it'];
+    nl = json['nl'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['de'] = de;
+    data['en'] = en;
+    data['fr'] = fr;
+    data['es'] = es;
+    data['it'] = it;
+    data['nl'] = nl;
+    return data;
   }
 }
