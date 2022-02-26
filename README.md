@@ -4,9 +4,9 @@ A Flutter package to use and convert RAL Colors to MaterialColors, RGB, Hexadeci
 ## Installation
 Add `ral_color` as a dependency in your pubspec.yaml file.
 
-```dart
+```yaml
 dependencies:
-ral_color: ^0.0.3
+ral_color: ^0.0.4
 ```
 
 ## Usage
@@ -32,8 +32,8 @@ RALColor ralColor = RALColor(numberRalColor: 9016);
 Color myRalColor = ralColor.toColor();
 
 //to get Name available language: [de,en,fr,es,it,nl] :
-String myRalNameEn = ralColor.getName().en;
-String myRalNameFr = ralColor.getName().fr;
+String myRalNameEn = ralColor.getName().getNameWithLocal('en');
+String myRalNameFr = ralColor.getName().getNameWithLocal('fr'); // if local not avaible, return english name
 
 //if you need more information, you can call RAL specification like :
 RAL myRAL = ralColor.getRAL();

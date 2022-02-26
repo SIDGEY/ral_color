@@ -1,6 +1,6 @@
 name: ral_color
 description: This package will allow you to convert RAL colors to MaterialColors, RGB, Hexadecimal, CMJN ...
-version: 0.0.3
+version: 0.0.4
 homepage: https://sidgey.fr
 #repository:
 #publish_to: none

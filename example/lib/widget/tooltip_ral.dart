@@ -23,7 +23,8 @@ class ToolTipRal extends StatelessWidget {
       message: """
         value : ${ralColor.getRAL().code}
         hexa : ${ralColor.getRAL().color.hex}
-        English Name : ${ralColor.getRAL().namesRal.en}
+        English Name : ${ralColor.getRAL().namesRal.getNameWithLocal("en")}
+        French Name : ${ralColor.getRAL().namesRal.getNameWithLocal("fr")}
       """,
       child: child,
     );

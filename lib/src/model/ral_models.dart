@@ -80,6 +80,10 @@ class Rgb {
     g = json['g'];
     b = json['b'];
   }
+
+  String displayRBG() {
+    return "R: $r , G: $g , B $b";
+  }
 }
 
 class Hsl {
@@ -98,6 +102,10 @@ class Hsl {
     s = json['s'];
     l = json['l'];
   }
+
+  String displayHSL() {
+    return "H: $h , S: $s , L $l";
+  }
 }
 
 class Hsb {
@@ -115,6 +123,10 @@ class Hsb {
     h = json['h'];
     s = json['s'];
     b = json['b'];
+  }
+
+  String displayHSB() {
+    return "H: $h , S: $s , B $b";
   }
 }
 
@@ -136,6 +148,10 @@ class Cmyk {
     m = json['m'];
     y = json['y'];
     k = json['k'];
+  }
+
+  String displayCMYK() {
+    return "C: $c , M: $m , Y $y, K: $k";
   }
 }
 
@@ -173,5 +189,13 @@ class NamesRal {
     data['it'] = it;
     data['nl'] = nl;
     return data;
+  }
+
+  String getNameWithLocal(String local) {
+    var map = this.toJson();
+    if (map.containsKey(local)) {
+      return map[local];
+    }
+    return en;
   }
 }
